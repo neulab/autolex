@@ -138,7 +138,7 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to Number Livvi-KKPP page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="0-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="0-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
 1	Häi	_	_	_	_	0	_	_	_
 2	osti	ostua	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
 3	mašinan	mašin	NOUN	NOUN	Case=Acc|Number=Sing	2	comp:obj	_	SpaceAfter=No
@@ -151,7 +151,23 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
+1	En	_	_	_	_	0	_	_	_
+2	ehtinyh	_	_	_	_	0	_	_	_
+3	hänele	_	_	_	_	0	_	_	_
+4	jälles	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	sendäh	_	_	_	_	0	_	_	_
+7	ku	_	_	_	_	0	_	_	_
+8	häi	häi	PRON	PRON	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	subj	_	_
+9	juoksi	juosta	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+10	ylen	_	_	_	_	0	_	_	_
+11	terväh	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>PROPN</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
 1	Peter	Peter	PROPN	PROPN	Case=Nom|Number=Sing	0	_	_	_
 2	da	_	_	_	_	0	_	_	_
 3	Mari	Mari	PROPN	PROPN	Case=Nom|Number=Sing	1	conj	_	_
@@ -163,41 +179,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>underspecified dependency</i>(<a href="https://surfacesyntacticud.github.io/">udep)</a> of the head token,  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
-1	Hänel	_	_	_	_	0	_	_	_
-2	olis	_	_	_	_	0	_	_	_
-3	pidänyh	_	_	_	_	0	_	_	_
-4	olla	_	_	_	_	0	_	_	_
-5	prichoskua	_	_	_	_	0	_	_	_
-6	luadimas	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	ga	_	_	_	_	0	_	_	_
-9	häi	_	_	_	_	0	_	_	_
-10	erähien	_	_	_	_	0	_	_	_
-11	syylöin	_	_	_	_	0	_	_	_
-12	periä	_	_	_	_	0	_	_	_
-13	ei	ei	AUX	AUX	Number=Sing|Person=3|Polarity=Neg	0	_	_	_
-14	voinnuh	_	_	_	_	0	_	_	_
-15	sinä	_	_	_	_	0	_	_	_
-16	piän	päivy	NOUN	NOUN	Case=Ess|Number=Sing	13	udep	_	SpaceAfter=No
-17	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>orphan</i>(<a href="https://universaldependencies.org/u/dep/orphan.html">orphan)</a> of the head token,  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
-1	Häi	_	_	_	_	0	_	_	_
-2	osti	_	_	_	_	0	_	_	_
-3	mašinan	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	ga	_	_	_	_	0	_	_	_
-6	hänen	_	_	_	_	0	_	_	_
-7	velleh	velli	NOUN	NOUN	Case=Ill|Number=Sing	0	_	_	_
-8	pyörän	pyöry	NOUN	NOUN	Case=Acc|Number=Sing	7	orphan	_	SpaceAfter=No
-9	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>determiner</i>(<a href="https://universaldependencies.org/u/dep/det.html">det)</a> of the head token,  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>determiner</i>(<a href="https://universaldependencies.org/u/dep/det.html">det)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
 1	Hänel	_	_	_	_	0	_	_	_
 2	olis	_	_	_	_	0	_	_	_
 3	pidänyh	_	_	_	_	0	_	_	_
@@ -218,20 +200,28 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
-1	Häi	_	_	_	_	0	_	_	_
-2	osti	ostua	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
-3	mašinan	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	ga	_	_	_	_	0	_	_	_
-6	hänen	_	_	_	_	0	_	_	_
-7	velleh	velli	NOUN	NOUN	Case=Ill|Number=Sing	2	conj	_	_
-8	pyörän	_	_	_	_	0	_	_	_
-9	.	_	_	_	_	0	_	_	_
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Peteran	_	_	_	_	0	_	_	_
+2	susiedu	susiedu	NOUN	NOUN	Case=Nom|Number=Sing	3	subj	_	_
+3	kruassi	kruassie	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+4	aijan	_	_	_	_	0	_	_	_
+5	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@cop)</a> of the head token,  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>underspecified dependency</i>(<a href="https://surfacesyntacticud.github.io/">udep)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Peter	_	_	_	_	0	_	_	_
+2	da	_	_	_	_	0	_	_	_
+3	Mari	_	_	_	_	0	_	_	_
+4	sevättihes	_	_	_	_	0	_	_	_
+5	da	_	_	_	_	0	_	_	_
+6	lähtiettih	lähtie	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+7	pertispäi	perti	NOUN	NOUN	Case=Ela|Number=Plur	6	udep	_	SpaceAfter=No
+8	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@cop)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
 1	Heil	_	_	_	_	0	_	_	_
 2	ei	ei	AUX	AUX	Mood=Ind|Number=Sing|Person=3	0	_	_	_
 3	ole	_	_	_	_	0	_	_	_
@@ -245,7 +235,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token,  and the dependent token is <i>ADJ</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>ADJ</i>.</li><pre><code class="language-conllu">
 1	Ongo	olla	AUX	AUX	Clitic=Go|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 2	Iguazu	_	_	_	_	0	_	_	_
 3	suuri	suuri	ADJ	ADJ	Case=Acc|Number=Sing	1	comp:pred	_	_
@@ -256,7 +246,21 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>flat multiword expression</i>(<a href="https://universaldependencies.org/u/dep/flat.html">flat@name)</a> of the head token,  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>orphan</i>(<a href="https://universaldependencies.org/u/dep/orphan.html">orphan)</a> of the head token,  and the head token is <i>PROPN</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Mary	_	_	_	_	0	_	_	_
+2	voitti	_	_	_	_	0	_	_	_
+3	bronzumedalin	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	Peter	_	_	_	_	0	_	_	_
+6	hobjumedalin	_	_	_	_	0	_	_	_
+7	da	_	_	_	_	0	_	_	_
+8	Jane	Jane	PROPN	PROPN	Case=Nom|Number=Sing	0	_	_	_
+9	kuldumedalin	kuldu#medali	NOUN	NOUN	Case=Acc|Number=Sing	8	orphan	_	SpaceAfter=No
+10	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>flat multiword expression</i>(<a href="https://universaldependencies.org/u/dep/flat.html">flat@name)</a> of the head token,  and the head token is <i>PROPN</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
 1	Ei	_	_	_	_	0	_	_	_
 2	voidu	_	_	_	_	0	_	_	_
 3	vallita	_	_	_	_	0	_	_	_
@@ -270,14 +274,32 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
 1	Midäbo	Mi	PRON	PRON	Case=Par|Number=Sing	2	comp:obj	_	PronType=Interr
 2	kačot	kaččuo	VERB	VERB	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 3	?	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>vocative</i>(<a href="https://universaldependencies.org/u/dep/vocative.html">vocative)</a> of the head token,  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Häi	_	_	_	_	0	_	_	_
+2	oppi	_	_	_	_	0	_	_	_
+3	heittiä	_	_	_	_	0	_	_	_
+4	kurindan	kurindu	NOUN	NOUN	Case=Acc|Number=Sing	0	_	_	_
+5	da	_	_	_	_	0	_	_	_
+6	juondan	juondu	NOUN	NOUN	Case=Acc|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Tahtotgo	Tahtuo	VERB	VERB	Clitic=Go|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+2	mennä	mennä	VERB	VERB	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	comp:pred	_	SpaceAfter=No
+3	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>vocative</i>(<a href="https://universaldependencies.org/u/dep/vocative.html">vocative)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
 1	Avua	avata	VERB	VERB	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	_	_	_
 2	ikkun	_	_	_	_	0	_	_	_
 3	,	_	_	_	_	0	_	_	_
@@ -286,7 +308,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@poss)</a> of the head token,  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@poss)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
 1	Peteran	Peter	PROPN	PROPN	Case=Gen|Number=Sing	2	mod@poss	_	_
 2	susiedu	susiedu	NOUN	NOUN	Case=Nom|Number=Sing	0	_	_	_
 3	kruassi	_	_	_	_	0	_	_	_
@@ -295,7 +317,32 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@cop)</a> of the head token,  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+1	Mary	Mary	PROPN	PROPN	Case=Nom|Number=Sing	2	subj	_	_
+2	voitti	voittua	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+3	bronzumedalin	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	Peter	_	_	_	_	0	_	_	_
+6	hobjumedalin	_	_	_	_	0	_	_	_
+7	da	_	_	_	_	0	_	_	_
+8	Jane	_	_	_	_	0	_	_	_
+9	kuldumedalin	_	_	_	_	0	_	_	_
+10	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Ongo	olla	AUX	AUX	Clitic=Go|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	mod	_	_
+2	Iguazu	_	_	_	_	0	_	_	_
+3	suuri	_	_	_	_	0	_	_	_
+4	vai	_	_	_	_	0	_	_	_
+5	pieni	_	_	_	_	0	_	_	_
+6	mua	mua	NOUN	NOUN	Case=Acc|Number=Sing	0	_	_	_
+7	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@cop)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
 1	Ongo	_	_	_	_	0	_	_	_
 2	Iguazu	Iguazu	PROPN	PROPN	Case=Nom|Number=Sing	6	subj@cop	_	_
 3	suuri	_	_	_	_	0	_	_	_
@@ -306,7 +353,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the dependent token is <i>ADJ</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>ADJ</i>  and the dependent token is <i>ADJ</i>.</li><pre><code class="language-conllu">
 1	Ongo	_	_	_	_	0	_	_	_
 2	Iguazu	_	_	_	_	0	_	_	_
 3	suuri	suuri	ADJ	ADJ	Case=Acc|Number=Sing	0	_	_	_
@@ -317,7 +364,35 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
+1	Heil	_	_	_	_	0	_	_	_
+2	ei	_	_	_	_	0	_	_	_
+3	ole	_	_	_	_	0	_	_	_
+4	ovvostustu	ovvostus	NOUN	NOUN	Case=Par|Number=Sing	0	_	_	_
+5	sit	sit	PRON	PRON	Case=Par|Number=Sing	4	mod	_	SpaceAfter=No
+6	,	_	_	_	_	0	_	_	_
+7	ken	_	_	_	_	0	_	_	_
+8	sen	_	_	_	_	0	_	_	_
+9	kirjutti	_	_	_	_	0	_	_	_
+10	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@relcl)</a> of the head token,  and the head token is <i>PRON</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Heil	_	_	_	_	0	_	_	_
+2	ei	_	_	_	_	0	_	_	_
+3	ole	_	_	_	_	0	_	_	_
+4	ovvostustu	_	_	_	_	0	_	_	_
+5	sit	sit	PRON	PRON	Case=Par|Number=Sing	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	ken	_	_	_	_	0	_	_	_
+8	sen	_	_	_	_	0	_	_	_
+9	kirjutti	kirjuttua	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	mod@relcl	_	SpaceAfter=No
+10	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
 1	Konzubo	_	_	_	_	0	_	_	_
 2	duumaičet	duumaija	VERB	VERB	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 3	voit	voija	AUX	AUX	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	comp:obj	_	_
@@ -326,7 +401,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@poss)</a> of the head token,  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@poss)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
 1	Häi	_	_	_	_	0	_	_	_
 2	osti	_	_	_	_	0	_	_	_
 3	mašinan	_	_	_	_	0	_	_	_
@@ -339,7 +414,108 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@cop)</a> of the head token,  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Häi	_	_	_	_	0	_	_	_
+2	osti	ostua	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+3	mašinan	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	ga	_	_	_	_	0	_	_	_
+6	hänen	_	_	_	_	0	_	_	_
+7	velleh	velli	NOUN	NOUN	Case=Ill|Number=Sing	2	conj	_	_
+8	pyörän	_	_	_	_	0	_	_	_
+9	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>orphan</i>(<a href="https://universaldependencies.org/u/dep/orphan.html">orphan)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Häi	_	_	_	_	0	_	_	_
+2	osti	_	_	_	_	0	_	_	_
+3	mašinan	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	ga	_	_	_	_	0	_	_	_
+6	hänen	_	_	_	_	0	_	_	_
+7	velleh	velli	NOUN	NOUN	Case=Ill|Number=Sing	0	_	_	_
+8	pyörän	pyöry	NOUN	NOUN	Case=Acc|Number=Sing	7	orphan	_	SpaceAfter=No
+9	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Peter	_	_	_	_	0	_	_	_
+2	da	_	_	_	_	0	_	_	_
+3	Mari	_	_	_	_	0	_	_	_
+4	sevättihes	sevätä	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Reflex=Yes|Tense=Past|VerbForm=Fin	0	_	_	_
+5	da	_	_	_	_	0	_	_	_
+6	lähtiettih	lähtie	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
+7	pertispäi	_	_	_	_	0	_	_	_
+8	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
+1	Hänel	_	_	_	_	0	_	_	_
+2	olis	_	_	_	_	0	_	_	_
+3	pidänyh	_	_	_	_	0	_	_	_
+4	olla	_	_	_	_	0	_	_	_
+5	prichoskua	_	_	_	_	0	_	_	_
+6	luadimas	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	ga	_	_	_	_	0	_	_	_
+9	häi	häi	PRON	PRON	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	subj	_	_
+10	erähien	_	_	_	_	0	_	_	_
+11	syylöin	_	_	_	_	0	_	_	_
+12	periä	_	_	_	_	0	_	_	_
+13	ei	ei	AUX	AUX	Number=Sing|Person=3|Polarity=Neg	0	_	_	_
+14	voinnuh	_	_	_	_	0	_	_	_
+15	sinä	_	_	_	_	0	_	_	_
+16	piän	_	_	_	_	0	_	_	_
+17	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>ADJ</i>.</li><pre><code class="language-conllu">
+1	Hänel	_	_	_	_	0	_	_	_
+2	olis	_	_	_	_	0	_	_	_
+3	pidänyh	_	_	_	_	0	_	_	_
+4	olla	_	_	_	_	0	_	_	_
+5	prichoskua	_	_	_	_	0	_	_	_
+6	luadimas	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	ga	_	_	_	_	0	_	_	_
+9	häi	_	_	_	_	0	_	_	_
+10	erähien	eräs	ADJ	ADJ	Case=Gen|Number=Plur	11	mod	_	_
+11	syylöin	syy	NOUN	NOUN	Case=Gen|Number=Plur	0	_	_	_
+12	periä	_	_	_	_	0	_	_	_
+13	ei	_	_	_	_	0	_	_	_
+14	voinnuh	_	_	_	_	0	_	_	_
+15	sinä	_	_	_	_	0	_	_	_
+16	piän	_	_	_	_	0	_	_	_
+17	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>underspecified dependency</i>(<a href="https://surfacesyntacticud.github.io/">udep)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Hänel	_	_	_	_	0	_	_	_
+2	olis	_	_	_	_	0	_	_	_
+3	pidänyh	_	_	_	_	0	_	_	_
+4	olla	_	_	_	_	0	_	_	_
+5	prichoskua	_	_	_	_	0	_	_	_
+6	luadimas	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	ga	_	_	_	_	0	_	_	_
+9	häi	_	_	_	_	0	_	_	_
+10	erähien	_	_	_	_	0	_	_	_
+11	syylöin	_	_	_	_	0	_	_	_
+12	periä	_	_	_	_	0	_	_	_
+13	ei	ei	AUX	AUX	Number=Sing|Person=3|Polarity=Neg	0	_	_	_
+14	voinnuh	_	_	_	_	0	_	_	_
+15	sinä	_	_	_	_	0	_	_	_
+16	piän	päivy	NOUN	NOUN	Case=Ess|Number=Sing	13	udep	_	SpaceAfter=No
+17	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@cop)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
 1	Tämä	Tämä	PRON	PRON	Case=Nom|Number=Sing|PronType=Dem	2	subj@cop	_	_
 2	on	olla	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 3	kirjaine	_	_	_	_	0	_	_	_
@@ -352,7 +528,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token,  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
 1	Tämä	_	_	_	_	0	_	_	_
 2	on	olla	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 3	kirjaine	kirjaine	NOUN	NOUN	Case=Acc|Number=Sing	2	comp:pred	_	_
@@ -365,7 +541,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>underspecified dependency</i>(<a href="https://surfacesyntacticud.github.io/">udep)</a> of the head token,  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>underspecified dependency</i>(<a href="https://surfacesyntacticud.github.io/">udep)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
 1	Tämä	_	_	_	_	0	_	_	_
 2	on	olla	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 3	kirjaine	_	_	_	_	0	_	_	_
@@ -386,6 +562,41 @@ span.displaynone { display: none; }
 5	migu	_	_	_	_	0	_	_	_
 6	sinun	_	_	_	_	0	_	_	_
 7	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Ei	_	_	_	_	0	_	_	_
+2	voidu	_	_	_	_	0	_	_	_
+3	vallita	_	_	_	_	0	_	_	_
+4	Peter	_	_	_	_	0	_	_	_
+5	Smithua	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	eigo	ja#ei	CCONJ	CCONJ	Number=Plur|Person=3|Polarity=Neg	8	cc	_	_
+8	Mary	Mary	PROPN	PROPN	Case=Nom|Number=Sing	0	_	_	_
+9	Brownii	_	_	_	_	0	_	_	_
+10	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Konzubo	_	_	_	_	0	_	_	_
+2	duumaičet	_	_	_	_	0	_	_	_
+3	voit	voija	AUX	AUX	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+4	tulla	tulla	VERB	VERB	Connegative=Yes|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	comp:aux	_	SpaceAfter=No
+5	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Peter	Peter	PROPN	PROPN	Case=Nom|Number=Sing	4	subj	_	_
+2	da	_	_	_	_	0	_	_	_
+3	Mari	_	_	_	_	0	_	_	_
+4	sevättihes	sevätä	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Reflex=Yes|Tense=Past|VerbForm=Fin	0	_	_	_
+5	da	_	_	_	_	0	_	_	_
+6	lähtiettih	_	_	_	_	0	_	_	_
+7	pertispäi	_	_	_	_	0	_	_	_
+8	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

@@ -138,152 +138,57 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to Person Estonian-EWT page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="2-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
-1	Inimesed	_	_	_	_	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	kes	_	_	_	_	0	_	_	_
-4	võitlevad	_	_	_	_	0	_	_	_
-5	iga	_	_	_	_	0	_	_	_
-6	päev	_	_	_	_	0	_	_	_
-7	paanika	_	_	_	_	0	_	_	_
-8	hoogudega	_	_	_	_	0	_	_	_
-9	,	_	_	_	_	0	_	_	_
-10	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-11	tegelikult	_	_	_	_	0	_	_	_
-12	väga	_	_	_	_	0	_	_	_
-13	julged	_	_	_	_	0	_	_	_
-14	-	_	_	_	_	0	_	_	_
-15	igal	_	_	_	_	0	_	_	_
-16	hommikul	_	_	_	_	0	_	_	_
-17	nad	_	_	_	_	0	_	_	_
-18	teavad	teadma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	parataxis	_	SpaceAfter=No
-19	,	_	_	_	_	0	_	_	_
-20	et	_	_	_	_	0	_	_	_
-21	tõenäoliselt	_	_	_	_	0	_	_	_
-22	varsti	_	_	_	_	0	_	_	_
-23	jälle	_	_	_	_	0	_	_	_
-24	tuleb	_	_	_	_	0	_	_	_
-25	hoog	_	_	_	_	0	_	_	_
-26	,	_	_	_	_	0	_	_	_
-27	mis	_	_	_	_	0	_	_	_
-28	su	_	_	_	_	0	_	_	_
-29	jalust	_	_	_	_	0	_	_	_
-30	maha	_	_	_	_	0	_	_	_
-31	niidab	_	_	_	_	0	_	_	_
-32	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
-1	Siin	_	_	_	_	0	_	_	_
-2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-3	minu	_	_	_	_	0	_	_	_
-4	arvamus	_	_	_	_	0	_	_	_
-5	asjade	_	_	_	_	0	_	_	_
-6	kohta	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	mis	_	_	_	_	0	_	_	_
-9	hoiavad	_	_	_	_	0	_	_	_
-10	sind	_	_	_	_	0	_	_	_
-11	tagasi	_	_	_	_	0	_	_	_
-12	oma	_	_	_	_	0	_	_	_
-13	elu	_	_	_	_	0	_	_	_
-14	elamast	_	_	_	_	0	_	_	_
-15	:	_	_	_	_	0	_	_	_
-16	IGAÜKS	_	_	_	_	0	_	_	_
-17	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
-18	võimeline	_	_	_	_	0	_	_	_
-19	saama	_	_	_	_	0	_	_	_
-20	võitu	_	_	_	_	0	_	_	_
-21	nendest	_	_	_	_	0	_	_	_
-22	OMA	_	_	_	_	0	_	_	_
-23	hirmudest	_	_	_	_	0	_	_	_
-24	!!!	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
-1	Viimasel	_	_	_	_	0	_	_	_
-2	ajal	_	_	_	_	0	_	_	_
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="2-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Aga	_	_	_	_	0	_	_	_
+2	kus	_	_	_	_	0	_	_	_
 3	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-4	toimunud	_	_	_	_	0	_	_	_
-5	selginemine	_	_	_	_	0	_	_	_
-6	:	_	_	_	_	0	_	_	_
-7	tee	tegema	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
-8	,	_	_	_	_	0	_	_	_
-9	mis	_	_	_	_	0	_	_	_
-10	toitu	_	_	_	_	0	_	_	_
-11	sa	_	_	_	_	0	_	_	_
-12	teed	_	_	_	_	0	_	_	_
-13	,	_	_	_	_	0	_	_	_
-14	tee	_	_	_	_	0	_	_	_
-15	seda	_	_	_	_	0	_	_	_
-16	armastusega	_	_	_	_	0	_	_	_
-17	.	_	_	_	_	0	_	_	_
+4	kirjas	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	et	_	_	_	_	0	_	_	_
+7	telo	_	_	_	_	0	_	_	_
+8	on	_	_	_	_	0	_	_	_
+9	katki	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	kõik	_	_	_	_	0	_	_	_
+12	ju	_	_	_	_	0	_	_	_
+13	väidavad	väitma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+14	,	_	_	_	_	0	_	_	_
+15	et	_	_	_	_	0	_	_	_
+16	neil	_	_	_	_	0	_	_	_
+17	ka	_	_	_	_	0	_	_	_
+18	krõbiseb	_	_	_	_	0	_	_	_
+19	ja	_	_	_	_	0	_	_	_
+20	mitte	_	_	_	_	0	_	_	_
+21	ainult	_	_	_	_	0	_	_	_
+22	sungid	_	_	_	_	0	_	_	_
+23	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu">
-1	Küll	_	_	_	_	0	_	_	_
-2	ja	_	_	_	_	0	_	_	_
-3	küll	_	_	_	_	0	_	_	_
-4	olen	olema	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-5	näinud	_	_	_	_	0	_	_	_
-6	noori	_	_	_	_	0	_	_	_
-7	lapsi	_	_	_	_	0	_	_	_
-8	hobustega	_	_	_	_	0	_	_	_
-9	tegemas	_	_	_	_	0	_	_	_
-10	igast	_	_	_	_	0	_	_	_
-11	imeasju	_	_	_	_	0	_	_	_
-12	ja	_	_	_	_	0	_	_	_
-13	kujutamas	_	_	_	_	0	_	_	_
-14	ette	_	_	_	_	0	_	_	_
-15	,	_	_	_	_	0	_	_	_
-16	kui	_	_	_	_	0	_	_	_
-17	head	_	_	_	_	0	_	_	_
-18	nad	_	_	_	_	0	_	_	_
-19	välja	_	_	_	_	0	_	_	_
-20	näevad	_	_	_	_	0	_	_	_
-21	Üks	_	_	_	_	0	_	_	_
-22	asi	_	_	_	_	0	_	_	_
-23	mida	_	_	_	_	0	_	_	_
-24	ma	_	_	_	_	0	_	_	_
-25	veel	_	_	_	_	0	_	_	_
-26	ei	_	_	_	_	0	_	_	_
-27	salli	_	_	_	_	0	_	_	_
-28	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
-29	ilma	_	_	_	_	0	_	_	_
-30	kiivirta	_	_	_	_	0	_	_	_
-31	sõitmine	_	_	_	_	0	_	_	_
-32	!	_	_	_	_	0	_	_	_
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@relcl)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Light	_	_	_	_	0	_	_	_
+2	piletid	_	_	_	_	0	_	_	_
+3	on	_	_	_	_	0	_	_	_
+4	mõeldud	_	_	_	_	0	_	_	_
+5	nende	tema	PRON	P	Case=Gen|Number=Plur|Person=3|PronType=Prs	0	_	_	_
+6	jaoks	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	kes	_	_	_	_	0	_	_	_
+9	reisivad	reisima	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	mod@relcl	_	_
+10	vaid	_	_	_	_	0	_	_	_
+11	käsipagasiga	_	_	_	_	0	_	_	_
+12	ehk	_	_	_	_	0	_	_	_
+13	ilma	_	_	_	_	0	_	_	_
+14	äraantava	_	_	_	_	0	_	_	_
+15	pagasita	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu">
-1	SRY	_	_	_	_	0	_	_	_
-2	..	_	_	_	_	0	_	_	_
-3	aga	_	_	_	_	0	_	_	_
-4	kõik	_	_	_	_	0	_	_	_
-5	mu	_	_	_	_	0	_	_	_
-6	sõbrannad	_	_	_	_	0	_	_	_
-7	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-8	mu	_	_	_	_	0	_	_	_
-9	vastu	_	_	_	_	0	_	_	_
-10	!	_	_	_	_	0	_	_	_
-11	ma	_	_	_	_	0	_	_	_
-12	msnnis	_	_	_	_	0	_	_	_
-13	näiteks	_	_	_	_	0	_	_	_
-14	küsin	küsima	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	parataxis	_	_
-15	mis	_	_	_	_	0	_	_	_
-16	teed	_	_	_	_	0	_	_	_
-17	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>complement for auxiliary</i>(<a href="https://surfacesyntacticud.github.io/">comp:aux)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	2.	_	_	_	_	0	_	_	_
 2	ärge	ära	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-3	ostke	_	_	_	_	0	_	_	_
+3	ostke	ostma	VERB	V	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	comp:aux	_	_
 4	kaupa	_	_	_	_	0	_	_	_
 5	mida	_	_	_	_	0	_	_	_
 6	toodaks	_	_	_	_	0	_	_	_
@@ -292,7 +197,7 @@ span.displaynone { display: none; }
 9	nende	_	_	_	_	0	_	_	_
 10	kaupade	_	_	_	_	0	_	_	_
 11	hinnad	_	_	_	_	0	_	_	_
-12	jäävad	jääma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+12	jäävad	_	_	_	_	0	_	_	_
 13	samaks	_	_	_	_	0	_	_	_
 14	või	_	_	_	_	0	_	_	_
 15	odavnevad	_	_	_	_	0	_	_	_
@@ -314,36 +219,237 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<pre><code class="language-conllu">
-1	See	_	_	_	_	0	_	_	_
-2	rootslanna	_	_	_	_	0	_	_	_
-3	kes	_	_	_	_	0	_	_	_
-4	seda	_	_	_	_	0	_	_	_
-5	tutvustas	_	_	_	_	0	_	_	_
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Nüüd	_	_	_	_	0	_	_	_
+2	oli	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+3	küte	_	_	_	_	0	_	_	_
+4	jälle	_	_	_	_	0	_	_	_
+5	roppkallis	_	_	_	_	0	_	_	_
 6	,	_	_	_	_	0	_	_	_
-7	ütles	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	et	_	_	_	_	0	_	_	_
-10	see	_	_	_	_	0	_	_	_
-11	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-12	otseselt	_	_	_	_	0	_	_	_
-13	piibli	_	_	_	_	0	_	_	_
-14	lause	_	_	_	_	0	_	_	_
-15	.	_	_	_	_	0	_	_	_
-16	.	_	_	_	_	0	_	_	_
+7	nii	_	_	_	_	0	_	_	_
+8	et	_	_	_	_	0	_	_	_
+9	pensionist	_	_	_	_	0	_	_	_
+10	jäi	jääma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	mod	_	_
+11	pärast	_	_	_	_	0	_	_	_
+12	kohustuslike	_	_	_	_	0	_	_	_
+13	maksude	_	_	_	_	0	_	_	_
+14	(	_	_	_	_	0	_	_	_
+15	korter	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	elekter	_	_	_	_	0	_	_	_
+18	,	_	_	_	_	0	_	_	_
+19	telefon	_	_	_	_	0	_	_	_
+20	)	_	_	_	_	0	_	_	_
+21	järele	_	_	_	_	0	_	_	_
+22	vaid	_	_	_	_	0	_	_	_
+23	10	_	_	_	_	0	_	_	_
+24	krooni	_	_	_	_	0	_	_	_
+25	päeva	_	_	_	_	0	_	_	_
+26	kohta	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Ei	_	_	_	_	0	_	_	_
+2	hakka	_	_	_	_	0	_	_	_
+3	pikemalt	_	_	_	_	0	_	_	_
+4	kirjutama	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	kelle	_	_	_	_	0	_	_	_
+7	huvi	_	_	_	_	0	_	_	_
+8	tekkis	tekkima	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	subj	_	_
+9	loeb	lugema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+10	ise	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@cop)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Mures	_	_	_	_	0	_	_	_
+2	inimesel	_	_	_	_	0	_	_	_
+3	võibolla	_	_	_	_	0	_	_	_
+4	ei	_	_	_	_	0	_	_	_
+5	ole	_	_	_	_	0	_	_	_
+6	meeles	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	et	_	_	_	_	0	_	_	_
+9	ennustuses	_	_	_	_	0	_	_	_
+10	oli	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+11	-	_	_	_	_	0	_	_	_
+12	"	_	_	_	_	0	_	_	_
+13	ja	_	_	_	_	0	_	_	_
+14	kõik	_	_	_	_	0	_	_	_
+15	saab	saama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	subj@cop	_	_
+16	korda	_	_	_	_	0	_	_	_
 17	.	_	_	_	_	0	_	_	_
 18	"	_	_	_	_	0	_	_	_
-19	mullast	_	_	_	_	0	_	_	_
-20	oled	olema	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	11	parataxis	_	_
-21	sa	_	_	_	_	0	_	_	_
-22	võetud	_	_	_	_	0	_	_	_
-23	ja	_	_	_	_	0	_	_	_
-24	mullaks	_	_	_	_	0	_	_	_
-25	pead	_	_	_	_	0	_	_	_
-26	sa	_	_	_	_	0	_	_	_
-27	saama	_	_	_	_	0	_	_	_
-28	"	_	_	_	_	0	_	_	_
-29	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>unk</i>(<a href="https://universaldependencies.org/">unk)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	või	_	_	_	_	0	_	_	_
+2	see	_	_	_	_	0	_	_	_
+3	kehtib	kehtima	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+4	ka	_	_	_	_	0	_	_	_
+5	tänapäeval	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	mida	_	_	_	_	0	_	_	_
+8	Jesaja	_	_	_	_	0	_	_	_
+9	ütleb	ütlema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	unk	_	SpaceAfter=No
+10	:	_	_	_	_	0	_	_	_
+11	silmad	_	_	_	_	0	_	_	_
+12	neil	_	_	_	_	0	_	_	_
+13	on	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	aga	_	_	_	_	0	_	_	_
+16	nad	_	_	_	_	0	_	_	_
+17	ei	_	_	_	_	0	_	_	_
+18	näe	_	_	_	_	0	_	_	_
+19	;	_	_	_	_	0	_	_	_
+20	kõrvad	_	_	_	_	0	_	_	_
+21	neil	_	_	_	_	0	_	_	_
+22	on	_	_	_	_	0	_	_	_
+23	aga	_	_	_	_	0	_	_	_
+24	nad	_	_	_	_	0	_	_	_
+25	ei	_	_	_	_	0	_	_	_
+26	kuule	_	_	_	_	0	_	_	_
+27	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
+1	See	_	_	_	_	0	_	_	_
+2	aga	_	_	_	_	0	_	_	_
+3	eeldab	_	_	_	_	0	_	_	_
+4	seda	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	et	_	_	_	_	0	_	_	_
+7	mõistad	_	_	_	_	0	_	_	_
+8	asjade	_	_	_	_	0	_	_	_
+9	tähendust	_	_	_	_	0	_	_	_
+10	ja	_	_	_	_	0	_	_	_
+11	nende	tema	PRON	P	Case=Gen|Number=Plur|Person=3|PronType=Prs	0	_	_	_
+12	tähtsust	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	kellele	_	_	_	_	0	_	_	_
+15	teed	tegema	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	11	mod@relcl	_	SpaceAfter=No
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Aga	_	_	_	_	0	_	_	_
+2	nagu	_	_	_	_	0	_	_	_
+3	ma	_	_	_	_	0	_	_	_
+4	ütlesin	ütlema	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+5	ka	_	_	_	_	0	_	_	_
+6	Sulele	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	et	_	_	_	_	0	_	_	_
+9	mõista	_	_	_	_	0	_	_	_
+10	mõttetera	_	_	_	_	0	_	_	_
+11	on	olema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+12	vaja	_	_	_	_	0	_	_	_
+13	teemasse	_	_	_	_	0	_	_	_
+14	süveneda	_	_	_	_	0	_	_	_
+15	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Aga	_	_	_	_	0	_	_	_
+2	nagu	_	_	_	_	0	_	_	_
+3	ütlesin	ütlema	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+4	asjast	_	_	_	_	0	_	_	_
+5	saab	saama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+6	parema	_	_	_	_	0	_	_	_
+7	ülevaate	_	_	_	_	0	_	_	_
+8	ise	_	_	_	_	0	_	_	_
+9	lugedes	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Kuu	_	_	_	_	0	_	_	_
+2	aega	_	_	_	_	0	_	_	_
+3	sõitsin	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	siis	_	_	_	_	0	_	_	_
+6	tundsin	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	et	_	_	_	_	0	_	_	_
+9	hobune	_	_	_	_	0	_	_	_
+10	ei	_	_	_	_	0	_	_	_
+11	allu	_	_	_	_	0	_	_	_
+12	enam	_	_	_	_	0	_	_	_
+13	säärele	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	kangutab	kangutama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+16	ees	_	_	_	_	0	_	_	_
+17	ja	_	_	_	_	0	_	_	_
+18	mina	_	_	_	_	0	_	_	_
+19	nagu	_	_	_	_	0	_	_	_
+20	ikka	_	_	_	_	0	_	_	_
+21	suht	_	_	_	_	0	_	_	_
+22	väga	_	_	_	_	0	_	_	_
+23	lösutasin	lösutama	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	15	conj	_	_
+24	seal	_	_	_	_	0	_	_	_
+25	seljas	_	_	_	_	0	_	_	_
+26	kah	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	aga	_	_	_	_	0	_	_	_
+2	sa	_	_	_	_	0	_	_	_
+3	proovi	_	_	_	_	0	_	_	_
+4	välja	_	_	_	_	0	_	_	_
+5	uurida	_	_	_	_	0	_	_	_
+6	milles	_	_	_	_	0	_	_	_
+7	asi	_	_	_	_	0	_	_	_
+8	küsi	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	küsi	_	_	_	_	0	_	_	_
+11	otse	_	_	_	_	0	_	_	_
+12	ja	_	_	_	_	0	_	_	_
+13	korduvalt	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	et	_	_	_	_	0	_	_	_
+16	milles	_	_	_	_	0	_	_	_
+17	asi	_	_	_	_	0	_	_	_
+18	ja	_	_	_	_	0	_	_	_
+19	miks	_	_	_	_	0	_	_	_
+20	nad	_	_	_	_	0	_	_	_
+21	nii	_	_	_	_	0	_	_	_
+22	käituvad	_	_	_	_	0	_	_	_
+23	jne.	_	_	_	_	0	_	_	_
+24	igast	_	_	_	_	0	_	_	_
+25	erinevaid	_	_	_	_	0	_	_	_
+26	küsimusi	_	_	_	_	0	_	_	_
+27	,	_	_	_	_	0	_	_	_
+28	küll	_	_	_	_	0	_	_	_
+29	nad	_	_	_	_	0	_	_	_
+30	lõpuks	_	_	_	_	0	_	_	_
+31	vastavad	vastama	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+32	,	_	_	_	_	0	_	_	_
+33	milles	_	_	_	_	0	_	_	_
+34	asi	_	_	_	_	0	_	_	_
+35	!	_	_	_	_	0	_	_	_
+36	?	_	_	_	_	0	_	_	_
+37	küsi	küsima	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	31	conj	_	_
+38	korduvalt	_	_	_	_	0	_	_	_
+39	!	_	_	_	_	0	_	_	_
+40	see	_	_	_	_	0	_	_	_
+41	võib	_	_	_	_	0	_	_	_
+42	valus	_	_	_	_	0	_	_	_
+43	olla	_	_	_	_	0	_	_	_
+44	,	_	_	_	_	0	_	_	_
+45	aga	_	_	_	_	0	_	_	_
+46	parem	_	_	_	_	0	_	_	_
+47	oleks	_	_	_	_	0	_	_	_
+48	teada	_	_	_	_	0	_	_	_
+49	!	_	_	_	_	0	_	_	_
 
 </code></pre>
 

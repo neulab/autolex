@@ -138,7 +138,23 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Case.html">Back to Case Marathi-UFAL page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="5-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="5-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="5-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>underspecified dependency</i>(<a href="https://surfacesyntacticud.github.io/">udep@poss)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>ADP</i>.</li><pre><code class="language-conllu">
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="5-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="5-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="5-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li><p> When the head token is <i>NOUN</i>   and the dependent token is <i>DET</i>.</li><pre><code class="language-conllu">
+1	खरोखरच	_	_	_	_	0	_	_	_
+2	त्या	तो	DET	_	Case=Obl|Distance=Dist|PronType=Dem	3	det	_	_
+3	_	शेत	NOUN	_	Case=Obl|Gender=Neut|Number=Sing	0	_	_	_
+4	None	_	_	_	_	0	_	_	_
+5	None	_	_	_	_	0	_	_	_
+6	None	_	_	_	_	0	_	_	_
+7	जीव	_	_	_	_	0	_	_	_
+8	की	_	_	_	_	0	_	_	_
+9	प्राण	_	_	_	_	0	_	_	_
+10	प्रेम	_	_	_	_	0	_	_	_
+11	होते	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li><p> When the head token is <i>NOUN</i>   and the dependent token is <i>ADP</i>.</li><pre><code class="language-conllu">
 1	None	_	_	_	_	0	_	_	_
 2	None	_	_	_	_	0	_	_	_
 3	None	_	_	_	_	0	_	_	_
@@ -152,29 +168,18 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>underspecified dependency</i>(<a href="https://surfacesyntacticud.github.io/">udep)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>ADP</i>.</li><pre><code class="language-conllu">
-1	None	_	_	_	_	0	_	_	_
-2	None	_	_	_	_	0	_	_	_
-3	आज्ञा	_	_	_	_	0	_	_	_
-4	प्रमाण	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	असे	_	_	_	_	0	_	_	_
-7	म्हणून	_	_	_	_	0	_	_	_
-8	None	_	_	_	_	0	_	_	_
-9	None	_	_	_	_	0	_	_	_
-10	पाया	_	_	_	_	0	_	_	_
-11	पडून	_	_	_	_	0	_	_	_
-12	तो	_	_	_	_	0	_	_	_
-13	None	_	_	_	_	0	_	_	_
-14	_	चा	ADP	_	Case=Nom|Gender=Masc|Number=Sing	15	udep	_	_
-15	निरोप	निरोप	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	_	_	_
-16	घ्यायला	_	_	_	_	0	_	_	_
-17	गेला	_	_	_	_	0	_	_	_
-18	.	_	_	_	_	0	_	_	_
+<br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
+1	"	_	_	_	_	0	_	_	_
+2	तुम्हा	तुम्हा	DET	_	Case=Obl|Number=Plur|PronType=Dem	3	det	_	_
+3	बायकांना	बाई	NOUN	_	Case=Dat|Gender=Fem|Number=Plur	0	_	_	_
+4	कळत	_	_	_	_	0	_	_	_
+5	नाही	_	_	_	_	0	_	_	_
+6	.	_	_	_	_	0	_	_	_
+7	"	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
+<pre><code class="language-conllu">
 1	None	_	_	_	_	0	_	_	_
 2	None	_	_	_	_	0	_	_	_
 3	आज्ञा	_	_	_	_	0	_	_	_
@@ -208,6 +213,23 @@ span.displaynone { display: none; }
 
 <pre><code class="language-conllu">
 1	तो	_	_	_	_	0	_	_	_
+2	त्या	तो	DET	_	Case=Obl|Distance=Dist|PronType=Dem	3	det	_	_
+3	हरिणीला	हरिणी	NOUN	_	Case=Dat|Gender=Fem|Number=Sing	0	_	_	_
+4	मारणार	_	_	_	_	0	_	_	_
+5	होता	_	_	_	_	0	_	_	_
+6	;	_	_	_	_	0	_	_	_
+7	परंतु	_	_	_	_	0	_	_	_
+8	त्याला	_	_	_	_	0	_	_	_
+9	None	_	_	_	_	0	_	_	_
+10	None	_	_	_	_	0	_	_	_
+11	आई	_	_	_	_	0	_	_	_
+12	आठवली	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	तो	_	_	_	_	0	_	_	_
 2	त्या	_	_	_	_	0	_	_	_
 3	हरिणीला	_	_	_	_	0	_	_	_
 4	मारणार	_	_	_	_	0	_	_	_
@@ -220,32 +242,6 @@ span.displaynone { display: none; }
 11	आई	आई	NOUN	_	Case=Acc|Gender=Fem|Number=Sing	0	_	_	_
 12	आठवली	_	_	_	_	0	_	_	_
 13	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	एका	_	_	_	_	0	_	_	_
-2	खळखळ	_	_	_	_	0	_	_	_
-3	वाहणाऱ्या	_	_	_	_	0	_	_	_
-4	None	_	_	_	_	0	_	_	_
-5	_	चा	ADP	_	Case=Obl	6	udep@poss	_	_
-6	काठी	काठ	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	0	_	_	_
-7	दोघं	_	_	_	_	0	_	_	_
-8	बसली	_	_	_	_	0	_	_	_
-9	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	None	_	_	_	_	0	_	_	_
-2	_	चा	ADP	_	Case=Obl	3	udep@poss	_	_
-3	दारात	दार	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	0	_	_	_
-4	झळाळणाऱ्या	_	_	_	_	0	_	_	_
-5	None	_	_	_	_	0	_	_	_
-6	None	_	_	_	_	0	_	_	_
-7	ढीग	_	_	_	_	0	_	_	_
-8	पडले	_	_	_	_	0	_	_	_
-9	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

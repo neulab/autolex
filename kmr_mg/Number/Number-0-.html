@@ -138,7 +138,78 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to Number Kurmanji-MG page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="0-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@poss)</a> of the head token,  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="0-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@poss)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Loma	_	_	_	_	0	_	_	_
+2	hêrsa	_	_	_	_	0	_	_	_
+3	wan	_	_	_	_	0	_	_	_
+4	dibe	_	_	_	_	0	_	_	_
+5	sedema	sedem	NOUN	n	Case=Con|Definite=Def|Gender=Fem|Number=Sing	0	_	_	_
+6	zêdebûna	zêdebûn	NOUN	n	Case=Con|Definite=Def|Gender=Fem|Number=Sing	5	mod@poss	_	_
+7	pirsgirêkan	_	_	_	_	0	_	_	_
+8	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Civaka	civak	NOUN	n	Case=Con|Definite=Def|Gender=Fem|Number=Sing	11	subj	_	_
+2	misilmanan	_	_	_	_	0	_	_	_
+3	ji	_	_	_	_	0	_	_	_
+4	mezhebên	_	_	_	_	0	_	_	_
+5	şafiî	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	henefî	_	_	_	_	0	_	_	_
+8	û	_	_	_	_	0	_	_	_
+9	elewî	_	_	_	_	0	_	_	_
+10	pêk	_	_	_	_	0	_	_	_
+11	tê	hatin	VERB	vblex	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Civaka	_	_	_	_	0	_	_	_
+2	misilmanan	_	_	_	_	0	_	_	_
+3	ji	_	_	_	_	0	_	_	_
+4	mezhebên	_	_	_	_	0	_	_	_
+5	şafiî	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	henefî	henefî	NOUN	n	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	0	_	_	_
+8	û	_	_	_	_	0	_	_	_
+9	elewî	elewî	NOUN	n	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	7	conj	_	_
+10	pêk	_	_	_	_	0	_	_	_
+11	tê	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Dewleta	dewlet	NOUN	n	Case=Con|Definite=Def|Gender=Fem|Number=Sing	10	subj	_	_
+2	Tirkî	_	_	_	_	0	_	_	_
+3	ji	_	_	_	_	0	_	_	_
+4	Dewleta	_	_	_	_	0	_	_	_
+5	Sûrî	_	_	_	_	0	_	_	_
+6	bêtir	_	_	_	_	0	_	_	_
+7	dijî	_	_	_	_	0	_	_	_
+8	Kurdên	_	_	_	_	0	_	_	_
+9	Rojava	_	_	_	_	0	_	_	_
+10	ye	bûn	AUX	vbcop	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+11	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Loma	_	_	_	_	0	_	_	_
+2	hêrsa	_	_	_	_	0	_	_	_
+3	wan	_	_	_	_	0	_	_	_
+4	dibe	bûn	AUX	vbcop	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	sedema	sedem	NOUN	n	Case=Con|Definite=Def|Gender=Fem|Number=Sing	4	comp:pred	_	_
+6	zêdebûna	_	_	_	_	0	_	_	_
+7	pirsgirêkan	_	_	_	_	0	_	_	_
+8	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@poss)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
 1	Gelek	_	_	_	_	0	_	_	_
 2	ji	_	_	_	_	0	_	_	_
 3	wan	_	_	_	_	0	_	_	_
@@ -156,7 +227,18 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>determiner</i>(<a href="https://universaldependencies.org/u/dep/det.html">det)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>DET</i>.</li><pre><code class="language-conllu">
+1	Pênc	_	_	_	_	0	_	_	_
+2	salan	_	_	_	_	0	_	_	_
+3	li	_	_	_	_	0	_	_	_
+4	wê	ew	DET	det	Case=Obl|Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
+5	dibistanê	dibistan	NOUN	n	Case=Obl|Gender=Fem|Number=Sing|PronType=Dem	0	_	_	_
+6	xwendiye	_	_	_	_	0	_	_	_
+7	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Ji	_	_	_	_	0	_	_	_
 2	ber	_	_	_	_	0	_	_	_
 3	ku	_	_	_	_	0	_	_	_
@@ -190,7 +272,77 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>flat multiword expression</i>(<a href="https://universaldependencies.org/u/dep/flat.html">flat)</a> of the head token,  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Lê	_	_	_	_	0	_	_	_
+2	dema	_	_	_	_	0	_	_	_
+3	ku	_	_	_	_	0	_	_	_
+4	mirov	_	_	_	_	0	_	_	_
+5	bêje	_	_	_	_	0	_	_	_
+6	Mîrê	_	_	_	_	0	_	_	_
+7	Botan	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	hingî	_	_	_	_	0	_	_	_
+10	jî	_	_	_	_	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
+12	mirov	_	_	_	_	0	_	_	_
+13	behsa	behs	NOUN	n	Case=Con|Definite=Def|Gender=Fem|Number=Sing	21	comp:obj	_	_
+14	mîrê	_	_	_	_	0	_	_	_
+15	ku	_	_	_	_	0	_	_	_
+16	li	_	_	_	_	0	_	_	_
+17	Cizîra	_	_	_	_	0	_	_	_
+18	Botan	_	_	_	_	0	_	_	_
+19	mîr	_	_	_	_	0	_	_	_
+20	e	_	_	_	_	0	_	_	_
+21	dike	kirin	VERB	vblex	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>PROPN</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+1	Gelek	_	_	_	_	0	_	_	_
+2	ji	_	_	_	_	0	_	_	_
+3	wan	_	_	_	_	0	_	_	_
+4	koçberê	_	_	_	_	0	_	_	_
+5	Rûsya	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	Ermenistan	Ermenistan	PROPN	np	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	Gurcistan	Gurcistan	PROPN	np	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	7	conj	_	_
+10	û	_	_	_	_	0	_	_	_
+11	bajarên	_	_	_	_	0	_	_	_
+12	Tirkiyeyê	_	_	_	_	0	_	_	_
+13	bûne	_	_	_	_	0	_	_	_
+14	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>flat multiword expression</i>(<a href="https://universaldependencies.org/u/dep/flat.html">flat)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+1	Lê	_	_	_	_	0	_	_	_
+2	dema	_	_	_	_	0	_	_	_
+3	ku	_	_	_	_	0	_	_	_
+4	mirov	_	_	_	_	0	_	_	_
+5	bêje	_	_	_	_	0	_	_	_
+6	Mîrê	mîr	NOUN	n	Case=Con|Definite=Def|Gender=Masc|Number=Sing	0	_	_	_
+7	Botan	Botan	PROPN	np	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	6	flat	_	SpaceAfter=No
+8	,	_	_	_	_	0	_	_	_
+9	hingî	_	_	_	_	0	_	_	_
+10	jî	_	_	_	_	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
+12	mirov	_	_	_	_	0	_	_	_
+13	behsa	_	_	_	_	0	_	_	_
+14	mîrê	_	_	_	_	0	_	_	_
+15	ku	_	_	_	_	0	_	_	_
+16	li	_	_	_	_	0	_	_	_
+17	Cizîra	_	_	_	_	0	_	_	_
+18	Botan	_	_	_	_	0	_	_	_
+19	mîr	_	_	_	_	0	_	_	_
+20	e	_	_	_	_	0	_	_	_
+21	dike	_	_	_	_	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>flat multiword expression</i>(<a href="https://universaldependencies.org/u/dep/flat.html">flat)</a> of the head token,  and the head token is <i>PROPN</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
 1	Lê	_	_	_	_	0	_	_	_
 2	dema	_	_	_	_	0	_	_	_
 3	ku	_	_	_	_	0	_	_	_
@@ -216,25 +368,22 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
-1	Gelek	_	_	_	_	0	_	_	_
-2	ji	_	_	_	_	0	_	_	_
-3	wan	_	_	_	_	0	_	_	_
-4	koçberê	_	_	_	_	0	_	_	_
-5	Rûsya	_	_	_	_	0	_	_	_
-6	,	_	_	_	_	0	_	_	_
-7	Ermenistan	Ermenistan	PROPN	np	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	Gurcistan	Gurcistan	PROPN	np	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	7	conj	_	_
-10	û	_	_	_	_	0	_	_	_
-11	bajarên	_	_	_	_	0	_	_	_
-12	Tirkiyeyê	_	_	_	_	0	_	_	_
-13	bûne	_	_	_	_	0	_	_	_
-14	.	_	_	_	_	0	_	_	_
+<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the head token is <i>ADP</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Li	_	_	_	_	0	_	_	_
+2	gorî	_	_	_	_	0	_	_	_
+3	bajarên	bajar	NOUN	n	Case=Con|Definite=Def|Gender=Masc|Number=Plur	5	comp:obj	_	_
+4	din	_	_	_	_	0	_	_	_
+5	ên	yê	ADP	con	AdpType=Post|Gender=Fem,Masc|Number=Plur	0	_	_	_
+6	Pakistanê	_	_	_	_	0	_	_	_
+7	bajarekî	_	_	_	_	0	_	_	_
+8	pir	_	_	_	_	0	_	_	_
+9	pêşketî	_	_	_	_	0	_	_	_
+10	ye	_	_	_	_	0	_	_	_
+11	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
 1	Seranser	_	_	_	_	0	_	_	_
 2	Brîtanyayê	Brîtanya	PROPN	np	Case=Obl|Definite=Def|Gender=Fem|Number=Sing	3	subj	_	_
 3	dagir kiriye	dagirkirin	VERB	vblex	Evident=Nfh|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
@@ -247,23 +396,76 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
-1	Li	_	_	_	_	0	_	_	_
-2	gorî	_	_	_	_	0	_	_	_
-3	bajarên	bajar	NOUN	n	Case=Con|Definite=Def|Gender=Masc|Number=Plur	0	_	_	_
-4	din	_	_	_	_	0	_	_	_
-5	ên	_	_	_	_	0	_	_	_
-6	Pakistanê	Pakistan	PROPN	np	Case=Obl|Definite=Def|Gender=Fem|Number=Sing	3	mod@poss	_	_
-7	bajarekî	_	_	_	_	0	_	_	_
-8	pir	_	_	_	_	0	_	_	_
-9	pêşketî	_	_	_	_	0	_	_	_
-10	ye	_	_	_	_	0	_	_	_
-11	.	_	_	_	_	0	_	_	_
+<br><li> When the dependent token is the <i>compound</i>(<a href="https://universaldependencies.org/u/dep/compound.html">compound@lvc)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Ji	_	_	_	_	0	_	_	_
+2	ber	_	_	_	_	0	_	_	_
+3	ku	_	_	_	_	0	_	_	_
+4	dema	_	_	_	_	0	_	_	_
+5	dîl	dîl	NOUN	n	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	6	compound@lvc	_	_
+6	dikeve	ketin	VERB	vblex	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+7	destê	_	_	_	_	0	_	_	_
+8	îngilîzan	_	_	_	_	0	_	_	_
+9	ji	_	_	_	_	0	_	_	_
+10	aliyê	_	_	_	_	0	_	_	_
+11	serbazekî	_	_	_	_	0	_	_	_
+12	îngilîz	_	_	_	_	0	_	_	_
+13	ve	_	_	_	_	0	_	_	_
+14	bi	_	_	_	_	0	_	_	_
+15	şûrê	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	ji	_	_	_	_	0	_	_	_
+18	ser	_	_	_	_	0	_	_	_
+19	-	_	_	_	_	0	_	_	_
+20	çavê	_	_	_	_	0	_	_	_
+21	xwe	_	_	_	_	0	_	_	_
+22	tê	_	_	_	_	0	_	_	_
+23	birîndar	_	_	_	_	0	_	_	_
+24	kirin	_	_	_	_	0	_	_	_
+25	û	_	_	_	_	0	_	_	_
+26	cîhê	_	_	_	_	0	_	_	_
+27	birînê	_	_	_	_	0	_	_	_
+28	her	_	_	_	_	0	_	_	_
+29	dimîne	_	_	_	_	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu">
-1	Gelek	_	_	_	_	0	_	_	_
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@dat)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>NOUN</i>.</li><pre><code class="language-conllu">
+1	Ji	_	_	_	_	0	_	_	_
+2	ber	_	_	_	_	0	_	_	_
+3	ku	_	_	_	_	0	_	_	_
+4	dema	_	_	_	_	0	_	_	_
+5	dîl	_	_	_	_	0	_	_	_
+6	dikeve	ketin	VERB	vblex	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+7	destê	dest	NOUN	n	Case=Con|Definite=Def|Gender=Masc|Number=Sing	6	mod@dat	_	_
+8	îngilîzan	_	_	_	_	0	_	_	_
+9	ji	_	_	_	_	0	_	_	_
+10	aliyê	_	_	_	_	0	_	_	_
+11	serbazekî	_	_	_	_	0	_	_	_
+12	îngilîz	_	_	_	_	0	_	_	_
+13	ve	_	_	_	_	0	_	_	_
+14	bi	_	_	_	_	0	_	_	_
+15	şûrê	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	ji	_	_	_	_	0	_	_	_
+18	ser	_	_	_	_	0	_	_	_
+19	-	_	_	_	_	0	_	_	_
+20	çavê	_	_	_	_	0	_	_	_
+21	xwe	_	_	_	_	0	_	_	_
+22	tê	_	_	_	_	0	_	_	_
+23	birîndar	_	_	_	_	0	_	_	_
+24	kirin	_	_	_	_	0	_	_	_
+25	û	_	_	_	_	0	_	_	_
+26	cîhê	_	_	_	_	0	_	_	_
+27	birînê	_	_	_	_	0	_	_	_
+28	her	_	_	_	_	0	_	_	_
+29	dimîne	_	_	_	_	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
+1	Gelek	gelek	PRON	prn	Case=Nom|Gender=Masc|Number=Plur|PronType=Ind	13	subj	_	_
 2	ji	_	_	_	_	0	_	_	_
 3	wan	_	_	_	_	0	_	_	_
 4	koçberê	_	_	_	_	0	_	_	_
@@ -273,10 +475,131 @@ span.displaynone { display: none; }
 8	,	_	_	_	_	0	_	_	_
 9	Gurcistan	_	_	_	_	0	_	_	_
 10	û	_	_	_	_	0	_	_	_
-11	bajarên	bajar	NOUN	n	Case=Con|Definite=Def|Gender=Masc|Number=Plur	0	_	_	_
-12	Tirkiyeyê	Tirkiyê	PROPN	np	Case=Obl|Definite=Def|Gender=Fem|Number=Sing	11	mod@poss	_	_
-13	bûne	_	_	_	_	0	_	_	_
+11	bajarên	_	_	_	_	0	_	_	_
+12	Tirkiyeyê	_	_	_	_	0	_	_	_
+13	bûne	bûn	AUX	vbcop	Evident=Nfh|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
 14	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>NOUN</i>  and the dependent token is <i>NUM</i>.</li><pre><code class="language-conllu">
+1	Pênc	pênc	NUM	num	Case=Nom|Definite=Def|Number=Plur|NumType=Card	2	mod	_	_
+2	salan	sal	NOUN	n	Case=Obl|Gender=Fem|Number=Plur|PronType=Dem	0	_	_	_
+3	li	_	_	_	_	0	_	_	_
+4	wê	_	_	_	_	0	_	_	_
+5	dibistanê	_	_	_	_	0	_	_	_
+6	xwendiye	_	_	_	_	0	_	_	_
+7	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
+1	Ev	ev	DET	det	Case=Nom|Gender=Fem,Masc|Number=Plur,Sing|PronType=Dem	2	det	_	_
+2	kevir	kevir	NOUN	n	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	0	_	_	_
+3	li	_	_	_	_	0	_	_	_
+4	her	_	_	_	_	0	_	_	_
+5	derê	_	_	_	_	0	_	_	_
+6	nayê	_	_	_	_	0	_	_	_
+7	dîtin	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	li	_	_	_	_	0	_	_	_
+10	hinek	_	_	_	_	0	_	_	_
+11	çiyayan	_	_	_	_	0	_	_	_
+12	(	_	_	_	_	0	_	_	_
+13	wekî	_	_	_	_	0	_	_	_
+14	Çiyayê	_	_	_	_	0	_	_	_
+15	Stewrê	_	_	_	_	0	_	_	_
+16	)	_	_	_	_	0	_	_	_
+17	li	_	_	_	_	0	_	_	_
+18	hinek	_	_	_	_	0	_	_	_
+19	herêman	_	_	_	_	0	_	_	_
+20	dihê	_	_	_	_	0	_	_	_
+21	dîtin	_	_	_	_	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Ev	_	_	_	_	0	_	_	_
+2	kevir	_	_	_	_	0	_	_	_
+3	li	_	_	_	_	0	_	_	_
+4	her	_	_	_	_	0	_	_	_
+5	derê	_	_	_	_	0	_	_	_
+6	nayê	_	_	_	_	0	_	_	_
+7	dîtin	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	li	_	_	_	_	0	_	_	_
+10	hinek	hindek	DET	det	Gender=Fem,Masc|Number=Plur,Sing|PronType=Ind	11	det	_	_
+11	çiyayan	çiya	NOUN	n	Case=Obl|Gender=Masc|Number=Plur|PronType=Dem	0	_	_	_
+12	(	_	_	_	_	0	_	_	_
+13	wekî	_	_	_	_	0	_	_	_
+14	Çiyayê	_	_	_	_	0	_	_	_
+15	Stewrê	_	_	_	_	0	_	_	_
+16	)	_	_	_	_	0	_	_	_
+17	li	_	_	_	_	0	_	_	_
+18	hinek	_	_	_	_	0	_	_	_
+19	herêman	_	_	_	_	0	_	_	_
+20	dihê	_	_	_	_	0	_	_	_
+21	dîtin	_	_	_	_	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Ev	_	_	_	_	0	_	_	_
+2	kevir	_	_	_	_	0	_	_	_
+3	li	_	_	_	_	0	_	_	_
+4	her	_	_	_	_	0	_	_	_
+5	derê	_	_	_	_	0	_	_	_
+6	nayê	_	_	_	_	0	_	_	_
+7	dîtin	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	li	_	_	_	_	0	_	_	_
+10	hinek	_	_	_	_	0	_	_	_
+11	çiyayan	_	_	_	_	0	_	_	_
+12	(	_	_	_	_	0	_	_	_
+13	wekî	_	_	_	_	0	_	_	_
+14	Çiyayê	_	_	_	_	0	_	_	_
+15	Stewrê	_	_	_	_	0	_	_	_
+16	)	_	_	_	_	0	_	_	_
+17	li	_	_	_	_	0	_	_	_
+18	hinek	hindek	DET	det	Gender=Fem,Masc|Number=Plur,Sing|PronType=Ind	19	det	_	_
+19	herêman	herêm	NOUN	n	Case=Obl|Gender=Fem|Number=Plur|PronType=Dem	0	_	_	_
+20	dihê	_	_	_	_	0	_	_	_
+21	dîtin	_	_	_	_	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Di	_	_	_	_	0	_	_	_
+2	tedawiya	_	_	_	_	0	_	_	_
+3	vê	_	_	_	_	0	_	_	_
+4	nexweşiyê	_	_	_	_	0	_	_	_
+5	de	_	_	_	_	0	_	_	_
+6	psîkoterapî	psîkoterapî	NOUN	n	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	10	subj	_	_
+7	û	_	_	_	_	0	_	_	_
+8	bikaranîna	_	_	_	_	0	_	_	_
+9	dermanan	_	_	_	_	0	_	_	_
+10	tên	hatin	VERB	vblex	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+11	bikaranîn	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Di	_	_	_	_	0	_	_	_
+2	tedawiya	_	_	_	_	0	_	_	_
+3	vê	_	_	_	_	0	_	_	_
+4	nexweşiyê	_	_	_	_	0	_	_	_
+5	de	_	_	_	_	0	_	_	_
+6	psîkoterapî	_	_	_	_	0	_	_	_
+7	û	_	_	_	_	0	_	_	_
+8	bikaranîna	bikaranîn	NOUN	n	Case=Con|Definite=Def|Gender=Fem|Number=Sing	0	_	_	_
+9	dermanan	derman	NOUN	n	Case=Obl|Definite=Def|Gender=Masc|Number=Plur	8	mod@poss	_	_
+10	tên	_	_	_	_	0	_	_	_
+11	bikaranîn	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

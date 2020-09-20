@@ -138,175 +138,145 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to Person Wolof-WTB page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="3-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="3-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="3-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
-1	Ma	_	_	_	_	0	_	_	_
-2	baamtuwaat	_	_	_	_	0	_	_	_
-3	fi	_	_	_	_	0	_	_	_
-4	ne	_	_	_	_	0	_	_	_
-5	:	_	_	_	_	0	_	_	_
-6	man	_	_	_	_	0	_	_	_
-7	taaral	_	_	_	_	0	_	_	_
-8	gi	_	_	_	_	0	_	_	_
-9	lal	_	_	_	_	0	_	_	_
-10	seen	_	_	_	_	0	_	_	_
-11	am	_	_	_	_	0	_	_	_
-12	mbind	_	_	_	_	0	_	_	_
-13	ak	_	_	_	_	0	_	_	_
-14	ni	_	_	_	_	0	_	_	_
-15	mu	_	_	_	_	0	_	_	_
-16	di	_	_	_	_	0	_	_	_
-17	firndeele	_	_	_	_	0	_	_	_
-18	ne	_	_	_	_	0	_	_	_
-19	amul	am	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin	0	_	_	_
-20	lu	bu	PRON	PRON	NounClass=Wol7|Number=Sing|Person=3|PronType=Rel	19	comp:obj	_	_
-21	làmmiñu	_	_	_	_	0	_	_	_
-22	wolof	_	_	_	_	0	_	_	_
-23	di	_	_	_	_	0	_	_	_
-24	ñeetaane	_	_	_	_	0	_	_	_
-25	weneen	_	_	_	_	0	_	_	_
-26	làkk	_	_	_	_	0	_	_	_
-27	mu	_	_	_	_	0	_	_	_
-28	a	_	_	_	_	0	_	_	_
-29	ma	_	_	_	_	0	_	_	_
-30	tax	_	_	_	_	0	_	_	_
-31	a	_	_	_	_	0	_	_	_
-32	sukkandiku	_	_	_	_	0	_	_	_
-33	ci	_	_	_	_	0	_	_	_
-34	seen	_	_	_	_	0	_	_	_
-35	i	_	_	_	_	0	_	_	_
-36	woy	_	_	_	_	0	_	_	_
-37	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
-1	Lu	_	_	_	_	0	_	_	_
-2	war	_	_	_	_	0	_	_	_
-3	ca	_	_	_	_	0	_	_	_
-4	ñoñ	_	_	_	_	0	_	_	_
-5	Abuu	_	_	_	_	0	_	_	_
-6	Hanifa	_	_	_	_	0	_	_	_
-7	nag	_	_	_	_	0	_	_	_
-8	tekkiwul	tekki	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin	0	_	_	_
-9	farata	_	_	_	_	0	_	_	_
-10	la	la	AUX	COP	Mood=Ind|Number=Sing|Person=3|VerbForm=Fin	8	comp:obj	_	SpaceAfter=No
-11	.	_	_	_	_	0	_	_	_
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="3-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="3-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="3-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Te	_	_	_	_	0	_	_	_
+2	itam	_	_	_	_	0	_	_	_
+3	mën	_	_	_	_	0	_	_	_
+4	na	na	AUX	INFL	Aspect=Perf|Mood=Ind|Number=Sing|Person=3	0	_	_	_
+5	a	_	_	_	_	0	_	_	_
+6	meli	_	_	_	_	0	_	_	_
+7	bés	_	_	_	_	0	_	_	_
+8	ni	_	_	_	_	0	_	_	_
+9	mag	_	_	_	_	0	_	_	_
+10	ñi	_	_	_	_	0	_	_	_
+11	soloolul	solool	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin	4	parataxis	_	_
+12	leneen	_	_	_	_	0	_	_	_
+13	lu	_	_	_	_	0	_	_	_
+14	moy	_	_	_	_	0	_	_	_
+15	ay	_	_	_	_	0	_	_	_
+16	lim	_	_	_	_	0	_	_	_
+17	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
-1	Rax-ci-dolli	_	_	_	_	0	_	_	_
-2	mayuñu	may	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin	0	_	_	_
-3	leen	ko	PRON	CL	Case=Acc|Number=Plur|Person=2,3|PronType=Prs	2	comp:obj	_	_
-4	fu	_	_	_	_	0	_	_	_
-5	ñu	_	_	_	_	0	_	_	_
-6	yakke	_	_	_	_	0	_	_	_
-7	seen	_	_	_	_	0	_	_	_
-8	nàkk	_	_	_	_	0	_	_	_
-9	.	_	_	_	_	0	_	_	_
+1	Yàlla	_	_	_	_	0	_	_	_
+2	nee	_	_	_	_	0	_	_	_
+3	na	na	AUX	INFL	Aspect=Perf|Mood=Ind|Number=Sing|Person=3	0	_	_	_
+4	:	_	_	_	_	0	_	_	_
+5	Jullil	Julli	VERB	VERB	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	3	parataxis	_	_
+6	ngir	_	_	_	_	0	_	_	_
+7	sa	_	_	_	_	0	_	_	_
+8	boroom	_	_	_	_	0	_	_	_
+9	te	_	_	_	_	0	_	_	_
+10	rendi	_	_	_	_	0	_	_	_
+11	(	_	_	_	_	0	_	_	_
+12	lottal	_	_	_	_	0	_	_	_
+13	)	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Képp	_	_	_	_	0	_	_	_
-2	ku	_	_	_	_	0	_	_	_
-3	wuute	_	_	_	_	0	_	_	_
-4	dees	di	AUX	AUX	Aspect=Imp|Mood=Ind|Person=0|Tense=Pres	0	_	_	_
-5	na	na	AUX	INFL	Aspect=Perf|Mood=Ind|Number=Sing|Person=3	4	comp:aux	_	_
-6	la	_	_	_	_	0	_	_	_
-7	mbugal	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	ñu	_	_	_	_	0	_	_	_
-10	folli	_	_	_	_	0	_	_	_
-11	la	_	_	_	_	0	_	_	_
-12	mbaa	_	_	_	_	0	_	_	_
-13	ñu	_	_	_	_	0	_	_	_
-14	rey	_	_	_	_	0	_	_	_
-15	la	_	_	_	_	0	_	_	_
-16	.	_	_	_	_	0	_	_	_
+1	Yonent	_	_	_	_	0	_	_	_
+2	bi	_	_	_	_	0	_	_	_
+3	(	_	_	_	_	0	_	_	_
+4	Yalla	_	_	_	_	0	_	_	_
+5	na	_	_	_	_	0	_	_	_
+6	jàmmi	_	_	_	_	0	_	_	_
+7	Yàlla	_	_	_	_	0	_	_	_
+8	nekk	_	_	_	_	0	_	_	_
+9	ci	_	_	_	_	0	_	_	_
+10	moom	_	_	_	_	0	_	_	_
+11	)	_	_	_	_	0	_	_	_
+12	nee	_	_	_	_	0	_	_	_
+13	na	na	AUX	INFL	Aspect=Perf|Mood=Ind|Number=Sing|Person=3	0	_	_	_
+14	:	_	_	_	_	0	_	_	_
+15	Sellal-leen	sellal	VERB	VERB	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	13	parataxis	_	_
+16	seen	_	_	_	_	0	_	_	_
+17	i	_	_	_	_	0	_	_	_
+18	jëf	_	_	_	_	0	_	_	_
+19	ngir	_	_	_	_	0	_	_	_
+20	Yàlla	_	_	_	_	0	_	_	_
+21	kat	_	_	_	_	0	_	_	_
+22	du	_	_	_	_	0	_	_	_
+23	nangu	_	_	_	_	0	_	_	_
+24	lu	_	_	_	_	0	_	_	_
+25	dul	_	_	_	_	0	_	_	_
+26	lu	_	_	_	_	0	_	_	_
+27	ñu	_	_	_	_	0	_	_	_
+28	sellal	_	_	_	_	0	_	_	_
+29	ngir	_	_	_	_	0	_	_	_
+30	moom	_	_	_	_	0	_	_	_
+31	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Man	_	_	_	_	0	_	_	_
-2	nag	_	_	_	_	0	_	_	_
+1	Jëlee	_	_	_	_	0	_	_	_
+2	nanu	_	_	_	_	0	_	_	_
+3	ci	_	_	_	_	0	_	_	_
+4	Ibn	_	_	_	_	0	_	_	_
+5	Abaas	_	_	_	_	0	_	_	_
+6	mu	_	_	_	_	0	_	_	_
+7	ni	_	_	_	_	0	_	_	_
+8	Yonent	_	_	_	_	0	_	_	_
+9	(	_	_	_	_	0	_	_	_
+10	jàmmi	_	_	_	_	0	_	_	_
+11	Yàlla	_	_	_	_	0	_	_	_
+12	ci	_	_	_	_	0	_	_	_
+13	moom	_	_	_	_	0	_	_	_
+14	)	_	_	_	_	0	_	_	_
+15	bi	_	_	_	_	0	_	_	_
+16	nee	_	_	_	_	0	_	_	_
+17	na	na	AUX	INFL	Aspect=Perf|Mood=Ind|Number=Sing|Person=3	0	_	_	_
+18	:	_	_	_	_	0	_	_	_
+19	Xaalis	_	_	_	_	0	_	_	_
+20	dugaleesu	dugaleesu	VERB	VERB	Mood=Ind|Person=0|Polarity=Neg|VerbForm=Fin	17	parataxis	_	_
+21	ko	_	_	_	_	0	_	_	_
+22	ci	_	_	_	_	0	_	_	_
+23	lu	_	_	_	_	0	_	_	_
+24	gën	_	_	_	_	0	_	_	_
+25	gàttub	_	_	_	_	0	_	_	_
+26	Tabaski	_	_	_	_	0	_	_	_
+27	(	_	_	_	_	0	_	_	_
+28	iid	_	_	_	_	0	_	_	_
+29	)	_	_	_	_	0	_	_	_
+30	(	_	_	_	_	0	_	_	_
+31	Daaru	_	_	_	_	0	_	_	_
+32	Qutni	_	_	_	_	0	_	_	_
+33	soloo	_	_	_	_	0	_	_	_
+34	na	_	_	_	_	0	_	_	_
+35	ko	_	_	_	_	0	_	_	_
+36	)	_	_	_	_	0	_	_	_
+37	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Mu	_	_	_	_	0	_	_	_
+2	ne	_	_	_	_	0	_	_	_
 3	ma	_	_	_	_	0	_	_	_
-4	ne	_	_	_	_	0	_	_	_
-5	ngir	_	_	_	_	0	_	_	_
-6	dëggal	_	_	_	_	0	_	_	_
-7	niroo	_	_	_	_	0	_	_	_
-8	googu	_	_	_	_	0	_	_	_
-9	:	_	_	_	_	0	_	_	_
-10	mbaanaari	_	_	_	_	0	_	_	_
-11	séeréer	_	_	_	_	0	_	_	_
-12	yu	_	_	_	_	0	_	_	_
-13	yàgg	_	_	_	_	0	_	_	_
-14	ya	_	_	_	_	0	_	_	_
-15	ak	_	_	_	_	0	_	_	_
-16	mbaanaari	_	_	_	_	0	_	_	_
-17	waa	_	_	_	_	0	_	_	_
-18	Isipt	_	_	_	_	0	_	_	_
-19	yi	_	_	_	_	0	_	_	_
-20	walla	_	_	_	_	0	_	_	_
-21	seen	_	_	_	_	0	_	_	_
-22	pyramide	_	_	_	_	0	_	_	_
-23	yi	_	_	_	_	0	_	_	_
-24	,	_	_	_	_	0	_	_	_
-25	xool-leen	xool	VERB	VERB	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	_	_	_
-26	leen	ko	PRON	CL	Case=Acc|Number=Plur|Person=2,3|PronType=Prs	25	comp:obj	_	SpaceAfter=No
-27	.	_	_	_	_	0	_	_	_
+4	:	_	_	_	_	0	_	_	_
+5	loolu	_	_	_	_	0	_	_	_
+6	du	di	AUX	COP	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	0	_	_	_
+7	ci	_	_	_	_	0	_	_	_
+8	dara	_	_	_	_	0	_	_	_
+9	nataalal	nataal	VERB	VERB	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	parataxis	_	_
+10	ma	_	_	_	_	0	_	_	_
+11	xar	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Waxuma	wax	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin	0	_	_	_
-2	la	ko	PRON	CL	Case=Acc|Number=Sing|Person=2|PronType=Prs	1	comp:obj	_	_
-3	nag	_	_	_	_	0	_	_	_
-4	suulaale	_	_	_	_	0	_	_	_
-5	gi	_	_	_	_	0	_	_	_
-6	waa	_	_	_	_	0	_	_	_
-7	Isipt	_	_	_	_	0	_	_	_
-8	yi	_	_	_	_	0	_	_	_
-9	daan	_	_	_	_	0	_	_	_
-10	suulaale	_	_	_	_	0	_	_	_
-11	néew	_	_	_	_	0	_	_	_
-12	bi	_	_	_	_	0	_	_	_
-13	ak	_	_	_	_	0	_	_	_
-14	i	_	_	_	_	0	_	_	_
-15	bagaasam	_	_	_	_	0	_	_	_
-16	te	_	_	_	_	0	_	_	_
-17	séeréer	_	_	_	_	0	_	_	_
-18	su	_	_	_	_	0	_	_	_
-19	yàgg	_	_	_	_	0	_	_	_
-20	sa	_	_	_	_	0	_	_	_
-21	daan	_	_	_	_	0	_	_	_
-22	ko	_	_	_	_	0	_	_	_
-23	def	_	_	_	_	0	_	_	_
-24	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Doxiinu	_	_	_	_	0	_	_	_
-2	Brusiya	_	_	_	_	0	_	_	_
-3	wii	_	_	_	_	0	_	_	_
-4	dey	_	_	_	_	0	_	_	_
-5	dees	di	AUX	AUX	Aspect=Imp|Mood=Ind|Person=0|Tense=Pres	0	_	_	_
-6	na	na	AUX	INFL	Aspect=Perf|Mood=Ind|Number=Sing|Person=3	5	comp:aux	_	_
-7	ko	_	_	_	_	0	_	_	_
-8	lim	_	_	_	_	0	_	_	_
-9	mu	_	_	_	_	0	_	_	_
-10	dig	_	_	_	_	0	_	_	_
-11	soopiku	_	_	_	_	0	_	_	_
-12	gu	_	_	_	_	0	_	_	_
-13	mag	_	_	_	_	0	_	_	_
-14	ci	_	_	_	_	0	_	_	_
-15	taarixu	_	_	_	_	0	_	_	_
-16	bennoo	_	_	_	_	0	_	_	_
-17	gu	_	_	_	_	0	_	_	_
-18	Almaañ	_	_	_	_	0	_	_	_
-19	gi	_	_	_	_	0	_	_	_
-20	.	_	_	_	_	0	_	_	_
+1	Xar	_	_	_	_	0	_	_	_
+2	laa	la	AUX	INFL	FocusType=Compl|Mood=Ind|Number=Sing|Person=1	0	_	_	_
+3	bëgg	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	nataalal	nataal	VERB	VERB	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	_
+6	ma	_	_	_	_	0	_	_	_
+7	xar	_	_	_	_	0	_	_	_
+8	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

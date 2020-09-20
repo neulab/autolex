@@ -138,13 +138,13 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Tense.html">Back to Tense Lithuanian-HSE page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="2-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="2-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>complement for auxiliary</i>(<a href="https://surfacesyntacticud.github.io/">comp:aux)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Absoliučiai	_	_	_	_	0	_	_	_
 2	nepriklausoma	_	_	_	_	0	_	_	_
 3	šių	_	_	_	_	0	_	_	_
 4	dienų	_	_	_	_	0	_	_	_
 5	pasaulyje	_	_	_	_	0	_	_	_
-6	yra	būti	AUX	VBC	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Reflex=No|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+6	yra	_	_	_	_	0	_	_	_
 7	nebent	_	_	_	_	0	_	_	_
 8	Šiaurės	_	_	_	_	0	_	_	_
 9	Korėja	_	_	_	_	0	_	_	_
@@ -161,7 +161,7 @@ span.displaynone { display: none; }
 20	daugiau	_	_	_	_	0	_	_	_
 21	ar	_	_	_	_	0	_	_	_
 22	mažiau	_	_	_	_	0	_	_	_
-23	riboja	riboti	VERB	VBC	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Reflex=No|Tense=Pres|VerbForm=Fin|Voice=Act	6	parataxis	_	En=limit
+23	riboja	_	_	_	_	0	_	_	_
 24	savo	_	_	_	_	0	_	_	_
 25	veikimo	_	_	_	_	0	_	_	_
 26	laisvę	_	_	_	_	0	_	_	_
@@ -179,51 +179,183 @@ span.displaynone { display: none; }
 38	,	_	_	_	_	0	_	_	_
 39	bet	_	_	_	_	0	_	_	_
 40	tada	_	_	_	_	0	_	_	_
-41	yra	_	_	_	_	0	_	_	_
+41	yra	būti	AUX	VBC	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Reflex=No|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 42	teisingai	_	_	_	_	0	_	_	_
-43	baramos	_	_	_	_	0	_	_	_
+43	baramos	barti	VERB	VBNL	Case=Gen|Definite=Ind|Gender=Fem|Number=Sing|Polarity=Pos|Reflex=No|Tense=Pres|VerbForm=Part|Voice=Pass	41	comp:aux	_	En=scold|SpaceAfter=No
 44	)	_	_	_	_	0	_	_	_
 45	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Tapatinti	_	_	_	_	0	_	_	_
+2	ją	_	_	_	_	0	_	_	_
+3	su	_	_	_	_	0	_	_	_
+4	TSRS	_	_	_	_	0	_	_	_
+5	yra	_	_	_	_	0	_	_	_
+6	piktybiška	_	_	_	_	0	_	_	_
+7	demagogija	_	_	_	_	0	_	_	_
+8	–	_	_	_	_	0	_	_	_
+9	šiaip	_	_	_	_	0	_	_	_
+10	ar	_	_	_	_	0	_	_	_
+11	taip	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	kiekvienas	_	_	_	_	0	_	_	_
+14	lietuvis	_	_	_	_	0	_	_	_
+15	žino	žinoti	VERB	VBC	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Reflex=No|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	kuo	_	_	_	_	0	_	_	_
+18	skiriasi	skirtis	VERB	VBC	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Reflex=Yes|Tense=Pres|VerbForm=Fin|Voice=Act	15	comp:obj	_	En=differ
+19	Kolyma	_	_	_	_	0	_	_	_
+20	nuo	_	_	_	_	0	_	_	_
+21	Dublino	_	_	_	_	0	_	_	_
+22	ar	_	_	_	_	0	_	_	_
+23	Londono	_	_	_	_	0	_	_	_
+24	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
 <br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
-1	Emocijos	_	_	_	_	0	_	_	_
-2	ir	_	_	_	_	0	_	_	_
-3	ekstatiški	_	_	_	_	0	_	_	_
-4	ritualai	_	_	_	_	0	_	_	_
-5	yra	būti	AUX	VBC	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Reflex=No|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-6	gana	_	_	_	_	0	_	_	_
-7	pavojingas	_	_	_	_	0	_	_	_
-8	daiktas	_	_	_	_	0	_	_	_
-9	–	_	_	_	_	0	_	_	_
-10	tuos	_	_	_	_	0	_	_	_
-11	metodus	_	_	_	_	0	_	_	_
-12	naudojo	naudoti	VERB	VBC	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Reflex=No|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	En=use
-13	ir	_	_	_	_	0	_	_	_
-14	nacizmas	_	_	_	_	0	_	_	_
-15	,	_	_	_	_	0	_	_	_
-16	ir	_	_	_	_	0	_	_	_
-17	stalinizmas	_	_	_	_	0	_	_	_
-18	.	_	_	_	_	0	_	_	_
+1	Esu	būti	AUX	VBC	Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Reflex=No|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+2	skaitęs	skaityti	VERB	VBNH	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Polarity=Pos|Reflex=No|Tense=PastSimp|VerbForm=Part|Voice=Act	1	comp:aux	_	En=deliver
+3	–	_	_	_	_	0	_	_	_
+4	tiesa	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	ne	_	_	_	_	0	_	_	_
+7	lietuvių	_	_	_	_	0	_	_	_
+8	spaudoje	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	-	_	_	_	_	0	_	_	_
+11	interviu	_	_	_	_	0	_	_	_
+12	su	_	_	_	_	0	_	_	_
+13	mergina	_	_	_	_	0	_	_	_
+14	iš	_	_	_	_	0	_	_	_
+15	Europos	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	kuri	_	_	_	_	0	_	_	_
+18	atsako	_	_	_	_	0	_	_	_
+19	į	_	_	_	_	0	_	_	_
+20	klausimą	_	_	_	_	0	_	_	_
+21	,	_	_	_	_	0	_	_	_
+22	kuo	_	_	_	_	0	_	_	_
+23	skiriasi	_	_	_	_	0	_	_	_
+24	Rytų	_	_	_	_	0	_	_	_
+25	Europos	_	_	_	_	0	_	_	_
+26	politinė	_	_	_	_	0	_	_	_
+27	scena	_	_	_	_	0	_	_	_
+28	nuo	_	_	_	_	0	_	_	_
+29	Vakarų	_	_	_	_	0	_	_	_
+30	politinės	_	_	_	_	0	_	_	_
+31	scenos	_	_	_	_	0	_	_	_
+32	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Į	_	_	_	_	0	_	_	_
-2	tai	_	_	_	_	0	_	_	_
-3	man	_	_	_	_	0	_	_	_
-4	bus	būti	AUX	VBC	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Reflex=No|Tense=Fut|VerbForm=Fin|Voice=Act	0	_	_	_
-5	atsakyta	atsakyti	VERB	VBNL	Case=Nom|Definite=Ind|Gender=Fem|Number=Sing|Polarity=Pos|Reflex=No|Tense=Past|VerbForm=Part|Voice=Pass	4	comp:aux@pass	_	En=answer|SpaceAfter=No
-6	:	_	_	_	_	0	_	_	_
+1	Leonidas	_	_	_	_	0	_	_	_
+2	Donskis	_	_	_	_	0	_	_	_
+3	–	_	_	_	_	0	_	_	_
+4	vienas	_	_	_	_	0	_	_	_
+5	iš	_	_	_	_	0	_	_	_
+6	nedaugelio	_	_	_	_	0	_	_	_
+7	mūsų	_	_	_	_	0	_	_	_
+8	intelektualų	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	kuris	_	_	_	_	0	_	_	_
+11	dar	_	_	_	_	0	_	_	_
+12	neatmetė	_	_	_	_	0	_	_	_
+13	Sokrato	_	_	_	_	0	_	_	_
+14	priesaikų	_	_	_	_	0	_	_	_
+15	–	_	_	_	_	0	_	_	_
+16	viešai	_	_	_	_	0	_	_	_
+17	klausia	klausti	VERB	VBC	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Reflex=No|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+18	:	_	_	_	_	0	_	_	_
+19	kas	_	_	_	_	0	_	_	_
+20	su	_	_	_	_	0	_	_	_
+21	mumis	_	_	_	_	0	_	_	_
+22	atsitiko	atsitikti	VERB	VBC	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Reflex=No|Tense=Past|VerbForm=Fin|Voice=Act	17	comp:obj	_	En=happen|SpaceAfter=No
+23	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Stalino	_	_	_	_	0	_	_	_
+2	laikais	_	_	_	_	0	_	_	_
+3	sovietai	_	_	_	_	0	_	_	_
+4	mąstė	_	_	_	_	0	_	_	_
+5	ne	_	_	_	_	0	_	_	_
+6	tautinėmis	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	o	_	_	_	_	0	_	_	_
+9	klasinėmis	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	vėliau	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	po	_	_	_	_	0	_	_	_
+14	Stalino	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	grynai	_	_	_	_	0	_	_	_
+17	pragmatinėmis	_	_	_	_	0	_	_	_
+18	kategorijomis	_	_	_	_	0	_	_	_
+19	:	_	_	_	_	0	_	_	_
+20	jeigu	_	_	_	_	0	_	_	_
+21	tu	_	_	_	_	0	_	_	_
+22	nesipriešinsi	_	_	_	_	0	_	_	_
+23	mūsų	_	_	_	_	0	_	_	_
+24	valdžiai	_	_	_	_	0	_	_	_
+25	,	_	_	_	_	0	_	_	_
+26	tai	_	_	_	_	0	_	_	_
+27	nebūsi	būti	AUX	VBC	Mood=Ind|Number=Sing|Person=2|Polarity=Neg|Reflex=No|Tense=Fut|VerbForm=Fin|Voice=Act	0	_	_	_
+28	naikinamas	naikinti	VERB	VBNL	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Polarity=Pos|Reflex=No|Tense=Pres|VerbForm=Part|Voice=Pass	27	comp:aux	_	En=destroy
+29	ir	_	_	_	_	0	_	_	_
+30	galėsi	_	_	_	_	0	_	_	_
+31	daryti	_	_	_	_	0	_	_	_
+32	karjerą	_	_	_	_	0	_	_	_
+33	,	_	_	_	_	0	_	_	_
+34	vis	_	_	_	_	0	_	_	_
+35	vien	_	_	_	_	0	_	_	_
+36	kokiai	_	_	_	_	0	_	_	_
+37	tautai	_	_	_	_	0	_	_	_
+38	priklausai	_	_	_	_	0	_	_	_
+39	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Esu	būti	AUX	VBC	Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Reflex=No|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+2	ne	_	_	_	_	0	_	_	_
+3	kartą	_	_	_	_	0	_	_	_
+4	kalbėjęs	kalbėti	VERB	VBNH	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing|Polarity=Pos|Reflex=No|Tense=PastSimp|VerbForm=Part|Voice=Act	1	comp:aux	_	En=say
+5	apie	_	_	_	_	0	_	_	_
+6	pavojingą	_	_	_	_	0	_	_	_
 7	„	_	_	_	_	0	_	_	_
-8	čia	_	_	_	_	0	_	_	_
-9	ne	_	_	_	_	0	_	_	_
-10	mes	_	_	_	_	0	_	_	_
-11	vieni	_	_	_	_	0	_	_	_
-12	kalti	_	_	_	_	0	_	_	_
-13	“	_	_	_	_	0	_	_	_
-14	.	_	_	_	_	0	_	_	_
+8	lietuviškąją	_	_	_	_	0	_	_	_
+9	triadą	_	_	_	_	0	_	_	_
+10	“	_	_	_	_	0	_	_	_
+11	(	_	_	_	_	0	_	_	_
+12	sakyčiau	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	lietuviškąjį	_	_	_	_	0	_	_	_
+15	Bermudų	_	_	_	_	0	_	_	_
+16	trikampį	_	_	_	_	0	_	_	_
+17	)	_	_	_	_	0	_	_	_
+18	–	_	_	_	_	0	_	_	_
+19	nesutarimus	_	_	_	_	0	_	_	_
+20	su	_	_	_	_	0	_	_	_
+21	rusais	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	lenkais	_	_	_	_	0	_	_	_
+24	ir	_	_	_	_	0	_	_	_
+25	žydais	_	_	_	_	0	_	_	_
+26	,	_	_	_	_	0	_	_	_
+27	arba	_	_	_	_	0	_	_	_
+28	su	_	_	_	_	0	_	_	_
+29	Rusija	_	_	_	_	0	_	_	_
+30	,	_	_	_	_	0	_	_	_
+31	Lenkija	_	_	_	_	0	_	_	_
+32	ir	_	_	_	_	0	_	_	_
+33	Izraeliu	_	_	_	_	0	_	_	_
+34	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

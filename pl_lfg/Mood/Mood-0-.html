@@ -138,123 +138,134 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Mood.html">Back to Mood Polish-LFG page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="0-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
-1	-	_	_	_	_	0	_	_	_
-2	"	_	_	_	_	0	_	_	_
-3	Żywią	żywić	VERB	fin:pl:ter:imperf	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-4	i	_	_	_	_	0	_	_	_
-5	bronią	bronić	VERB	fin:pl:ter:imperf	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
-6	"	_	_	_	_	0	_	_	_
-7	.	_	_	_	_	0	_	_	_
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="0-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Wszystko	_	_	_	_	0	_	_	_
+2	ma	mieć	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+3	swój	_	_	_	_	0	_	_	_
+4	koniec	_	_	_	_	0	_	_	_
+5	i	_	_	_	_	0	_	_	_
+6	taka	_	_	_	_	0	_	_	_
+7	jest	być	AUX	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	prawda	_	_	_	_	0	_	_	_
+9	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
-1	Żołnierz	_	_	_	_	0	_	_	_
-2	nigdy	_	_	_	_	0	_	_	_
+<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	-	_	_	_	_	0	_	_	_
+2	Wiecie	wiedzieć	VERB	fin:pl:sec:imperf	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	kto	_	_	_	_	0	_	_	_
+5	to	_	_	_	_	0	_	_	_
+6	jest	być	AUX	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:obj	_	_
+7	Andrzej	_	_	_	_	0	_	_	_
+8	Wroński	_	_	_	_	0	_	_	_
+9	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Wewnętrznej	_	_	_	_	0	_	_	_
+2	klapy	_	_	_	_	0	_	_	_
 3	nie	_	_	_	_	0	_	_	_
-4	wie	wiedzieć	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	kiedy	_	_	_	_	0	_	_	_
-7	je	jeść	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	comp:obj	_	_
-8	po	_	_	_	_	0	_	_	_
-9	raz	_	_	_	_	0	_	_	_
-10	ostatni	_	_	_	_	0	_	_	_
+4	otworzy	otworzyć	VERB	fin:sg:ter:perf	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	0	_	_	_
+5	pan	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	kiedy	_	_	_	_	0	_	_	_
+8	otwarta	_	_	_	_	0	_	_	_
+9	jest	być	AUX	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	mod	_	_
+10	zewnętrzna	_	_	_	_	0	_	_	_
 11	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
-1	W	_	_	_	_	0	_	_	_
-2	chwili	_	_	_	_	0	_	_	_
-3	kiedy	_	_	_	_	0	_	_	_
-4	Julia	_	_	_	_	0	_	_	_
-5	wypowiedziała	wypowiedzieć	VERB	praet:sg:f:perf	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	11	mod	_	_
-6	te	_	_	_	_	0	_	_	_
-7	słowa	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	dla	_	_	_	_	0	_	_	_
-10	Andrew	_	_	_	_	0	_	_	_
-11	zatrzymał	zatrzymać	VERB	praet:sg:m3:perf	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|SubGender=Masc3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
-12	się	_	_	_	_	0	_	_	_
-13	czas	_	_	_	_	0	_	_	_
-14	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
-1	Ogromnie	_	_	_	_	0	_	_	_
-2	interesowało	interesować	VERB	praet:sg:n:imperf	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
-3	ich	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	co	_	_	_	_	0	_	_	_
-6	z	_	_	_	_	0	_	_	_
-7	tych	_	_	_	_	0	_	_	_
-8	zabiegów	_	_	_	_	0	_	_	_
-9	wyniknie	wyniknąć	VERB	fin:sg:ter:perf	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	2	subj	_	SpaceAfter=No
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Wszak	_	_	_	_	0	_	_	_
+2	ze	_	_	_	_	0	_	_	_
+3	składni	_	_	_	_	0	_	_	_
+4	wynika	wynikać	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+5	jednoznacznie	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	co	_	_	_	_	0	_	_	_
+8	jest	być	AUX	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	subj	_	_
+9	co	_	_	_	_	0	_	_	_
 10	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
-1	A	_	_	_	_	0	_	_	_
-2	teraz	_	_	_	_	0	_	_	_
-3	posłuchaj	posłuchać	VERB	impt:sg:sec:perf	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	co	_	_	_	_	0	_	_	_
-6	ci	_	_	_	_	0	_	_	_
-7	powiem	powiedzieć	VERB	fin:sg:pri:perf	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	3	comp:obj	_	SpaceAfter=No
-8	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Błagam	błagać	VERB	fin:sg:pri:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	nie	_	_	_	_	0	_	_	_
-4	chorujcie	chorować	VERB	impt:pl:sec:imperf	Aspect=Imp|Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	1	conj	_	_
-5	i	_	_	_	_	0	_	_	_
-6	żadnych	_	_	_	_	0	_	_	_
-7	kłopotów	_	_	_	_	0	_	_	_
-8	nie	_	_	_	_	0	_	_	_
-9	miejcie	_	_	_	_	0	_	_	_
-10	!	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
 1	-	_	_	_	_	0	_	_	_
-2	Chodź	_	_	_	_	0	_	_	_
+2	Chodź	chodzić	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	_	_	_
 3	,	_	_	_	_	0	_	_	_
-4	chodź	chodzić	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	_	_	_
+4	Kazik	_	_	_	_	0	_	_	_
 5	,	_	_	_	_	0	_	_	_
-6	pomogę	pomóc	VERB	fin:sg:pri:perf	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	4	conj	_	_
-7	ci	_	_	_	_	0	_	_	_
-8	.	_	_	_	_	0	_	_	_
+6	nikt	_	_	_	_	0	_	_	_
+7	nie	_	_	_	_	0	_	_	_
+8	będzie	być	AUX	bedzie:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	conj	_	_
+9	wiedział	_	_	_	_	0	_	_	_
+10	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Chodź	chodzić	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	Hari	_	_	_	_	0	_	_	_
+1	"	_	_	_	_	0	_	_	_
+2	Daj	dać	VERB	impt:sg:sec:perf	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	_	_	_
+3	spokój	_	_	_	_	0	_	_	_
 4	,	_	_	_	_	0	_	_	_
-5	podrzucę	podrzucić	VERB	fin:sg:pri:perf	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	1	conj	_	_
-6	cię	_	_	_	_	0	_	_	_
-7	do	_	_	_	_	0	_	_	_
-8	domu	_	_	_	_	0	_	_	_
-9	.	_	_	_	_	0	_	_	_
+5	gdzie	_	_	_	_	0	_	_	_
+6	będziesz	być	AUX	bedzie:sg:sec:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin	2	conj	_	_
+7	mieszkać	_	_	_	_	0	_	_	_
+8	?	_	_	_	_	0	_	_	_
+9	"	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Chodź	chodzić	VERB	impt:sg:sec:imperf	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	poszukamy	poszukać	VERB	fin:pl:pri:perf	Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	1	conj	_	_
-4	czegoś	_	_	_	_	0	_	_	_
-5	na	_	_	_	_	0	_	_	_
-6	Trzynachę	_	_	_	_	0	_	_	_
-7	.	_	_	_	_	0	_	_	_
+1	"	_	_	_	_	0	_	_	_
+2	Jestem	_	_	_	_	0	_	_	_
+3	inny	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	ale	_	_	_	_	0	_	_	_
+6	potrafię	potrafić	VERB	fin:sg:pri:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+7	więcej	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	niż	_	_	_	_	0	_	_	_
+10	mogło	_	_	_	_	0	_	_	_
+11	by	by	AUX	qub	Mood=Cnd	6	conj	_	_
+12	się	_	_	_	_	0	_	_	_
+13	wydawać	_	_	_	_	0	_	_	_
+14	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Jestem	być	VERB	fin:sg:pri:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+2	za	_	_	_	_	0	_	_	_
+3	ujawnieniem	_	_	_	_	0	_	_	_
+4	dokumentów	_	_	_	_	0	_	_	_
+5	IPN-u	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	niech	niech	AUX	qub	Mood=Imp	1	conj	_	_
+8	każdy	_	_	_	_	0	_	_	_
+9	je	_	_	_	_	0	_	_	_
+10	oceni	_	_	_	_	0	_	_	_
+11	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Mało	_	_	_	_	0	_	_	_
+2	brakowało	brakować	VERB	praet:sg:n:imperf	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	miłość	_	_	_	_	0	_	_	_
+6	do	_	_	_	_	0	_	_	_
+7	zajączka	_	_	_	_	0	_	_	_
+8	Kamil	_	_	_	_	0	_	_	_
+9	przypłacił	_	_	_	_	0	_	_	_
+10	by	by	AUX	qub	Mood=Cnd	2	conj	_	_
+11	życiem	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

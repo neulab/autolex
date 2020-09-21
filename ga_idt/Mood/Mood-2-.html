@@ -138,7 +138,7 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Mood.html">Back to Mood Irish-IDT page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="2-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="2-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	'	_	_	_	_	0	_	_	_
 2	Tosnóidh	tosnaigh	VERB	VTI	Mood=Ind|Tense=Fut	16	comp:obj	_	_
 3	an	_	_	_	_	0	_	_	_
@@ -165,7 +165,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	dhá	_	_	_	_	0	_	_	_
 2	chill	_	_	_	_	0	_	_	_
 3	leictreacha	_	_	_	_	0	_	_	_
@@ -217,20 +217,6 @@ span.displaynone { display: none; }
 </code></pre>
 
 <br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
-1	Ansin	_	_	_	_	0	_	_	_
-2	nach	is	AUX	Cop	Mood=Int|Polarity=Neg|Tense=Pres|VerbForm=Cop	0	_	_	_
-3	deas	_	_	_	_	0	_	_	_
-4	mar	_	_	_	_	0	_	_	_
-5	a	_	_	_	_	0	_	_	_
-6	bheadh	bí	VERB	Cond	Form=Len|Mood=Cnd	2	comp:pred	_	_
-7	an	_	_	_	_	0	_	_	_
-8	scéal	_	_	_	_	0	_	_	_
-9	a'm	_	_	_	_	0	_	_	_
-10	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
 1	Laistigh	_	_	_	_	0	_	_	_
 2	de	_	_	_	_	0	_	_	_
 3	bhalla	_	_	_	_	0	_	_	_
@@ -407,6 +393,85 @@ span.displaynone { display: none; }
 29	as	_	_	_	_	0	_	_	_
 30	sin	_	_	_	_	0	_	_	_
 31	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Deir	_	_	_	_	0	_	_	_
+2	Bernard	_	_	_	_	0	_	_	_
+3	(	_	_	_	_	0	_	_	_
+4	1971	_	_	_	_	0	_	_	_
+5	)	_	_	_	_	0	_	_	_
+6	go	_	_	_	_	0	_	_	_
+7	gcaithfear	_	_	_	_	0	_	_	_
+8	an	_	_	_	_	0	_	_	_
+9	saghas	_	_	_	_	0	_	_	_
+10	seo	_	_	_	_	0	_	_	_
+11	claonta	_	_	_	_	0	_	_	_
+12	a	_	_	_	_	0	_	_	_
+13	áireamh	_	_	_	_	0	_	_	_
+14	mar	_	_	_	_	0	_	_	_
+15	shampla	_	_	_	_	0	_	_	_
+16	den	_	_	_	_	0	_	_	_
+17	'	_	_	_	_	0	_	_	_
+18	ghnéasachas	_	_	_	_	0	_	_	_
+19	'	_	_	_	_	0	_	_	_
+20	:	_	_	_	_	0	_	_	_
+21	Agus	_	_	_	_	0	_	_	_
+22	chomh	_	_	_	_	0	_	_	_
+23	fada	_	_	_	_	0	_	_	_
+24	is	_	_	_	_	0	_	_	_
+25	a	_	_	_	_	0	_	_	_
+26	bhaineann	bain	VERB	VTI	Form=Len|Mood=Ind|Tense=Pres	0	_	_	_
+27	leis	_	_	_	_	0	_	_	_
+28	an	_	_	_	_	0	_	_	_
+29	saghas	_	_	_	_	0	_	_	_
+30	ábhair	_	_	_	_	0	_	_	_
+31	a	_	_	_	_	0	_	_	_
+32	raibh	_	_	_	_	0	_	_	_
+33	meas	_	_	_	_	0	_	_	_
+34	ag	_	_	_	_	0	_	_	_
+35	an	_	_	_	_	0	_	_	_
+36	bpobal	_	_	_	_	0	_	_	_
+37	agus	_	_	_	_	0	_	_	_
+38	ag	_	_	_	_	0	_	_	_
+39	scoláirí	_	_	_	_	0	_	_	_
+40	béaloidis	_	_	_	_	0	_	_	_
+41	air	_	_	_	_	0	_	_	_
+42	:	_	_	_	_	0	_	_	_
+43	Bheadh	bí	VERB	Cond	Form=Len|Mood=Cnd	26	parataxis	_	_
+44	sé	_	_	_	_	0	_	_	_
+45	tábhachtach	_	_	_	_	0	_	_	_
+46	,	_	_	_	_	0	_	_	_
+47	mar	_	_	_	_	0	_	_	_
+48	sin	_	_	_	_	0	_	_	_
+49	,	_	_	_	_	0	_	_	_
+50	ceist	_	_	_	_	0	_	_	_
+51	a	_	_	_	_	0	_	_	_
+52	chur	_	_	_	_	0	_	_	_
+53	mar	_	_	_	_	0	_	_	_
+54	gheall	_	_	_	_	0	_	_	_
+55	ar	_	_	_	_	0	_	_	_
+56	an	_	_	_	_	0	_	_	_
+57	dearcadh	_	_	_	_	0	_	_	_
+58	i	_	_	_	_	0	_	_	_
+59	leith	_	_	_	_	0	_	_	_
+60	na	_	_	_	_	0	_	_	_
+61	mban	_	_	_	_	0	_	_	_
+62	a	_	_	_	_	0	_	_	_
+63	bhí	_	_	_	_	0	_	_	_
+64	le	_	_	_	_	0	_	_	_
+65	feiscint	_	_	_	_	0	_	_	_
+66	i	_	_	_	_	0	_	_	_
+67	scoláireacht	_	_	_	_	0	_	_	_
+68	an	_	_	_	_	0	_	_	_
+69	bhéaloidis	_	_	_	_	0	_	_	_
+70	san	_	_	_	_	0	_	_	_
+71	am	_	_	_	_	0	_	_	_
+72	atá	_	_	_	_	0	_	_	_
+73	thart	_	_	_	_	0	_	_	_
+74	:	_	_	_	_	0	_	_	_
+75	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

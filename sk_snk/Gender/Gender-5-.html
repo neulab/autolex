@@ -138,76 +138,78 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Gender.html">Back to Gender Slovak-SNK page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="5-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="5-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="5-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>PROPN</i>.</li><pre><code class="language-conllu">
-1	Makulienka	makulienka	PROPN	SSfs1:r	Case=Nom|Gender=Fem|Number=Sing	3	subj	_	_
-2	veru	_	_	_	_	0	_	_	_
-3	bola	byť	AUX	VLescf+	Aspect=Imp|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	_	_	_
-4	tanečnica	_	_	_	_	0	_	_	_
-5	!	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>PRON</i>.</li><pre><code class="language-conllu">
-1	Nebol	byť	AUX	VLescm-	Animacy=Anim|Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Neg|Tense=Past|VerbForm=Part	0	_	_	_
-2	to	_	_	_	_	0	_	_	_
-3	nik	nik	PRON	PFms1	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing|PronType=Neg	1	subj	_	_
-4	iný	_	_	_	_	0	_	_	_
-5	ako	_	_	_	_	0	_	_	_
-6	chrobák	_	_	_	_	0	_	_	_
-7	Truhlík	_	_	_	_	0	_	_	_
-8	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>NUM</i>.</li><pre><code class="language-conllu">
-1	Jeden	jeden	NUM	NFis1	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	5	subj	_	_
-2	z	_	_	_	_	0	_	_	_
-3	najkrajších	_	_	_	_	0	_	_	_
-4	zážitkov	_	_	_	_	0	_	_	_
-5	bol	byť	AUX	VLesci+	Animacy=Inan|Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	_	_	_
-6	neplánovaný	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	no	_	_	_	_	0	_	_	_
-9	o	_	_	_	_	0	_	_	_
-10	to	_	_	_	_	0	_	_	_
-11	milší	_	_	_	_	0	_	_	_
-12	.	_	_	_	_	0	_	_	_
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="5-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="5-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="5-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>DET</i>.</li><pre><code class="language-conllu">
+1	To	to	DET	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	2	subj	_	_
+2	bolo	byť	AUX	VLescn+	Aspect=Imp|Gender=Neut|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	_	_	_
+3	šťastie	_	_	_	_	0	_	_	_
+4	!	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
-1	Meno	meno	PROPN	SSns1:r	Case=Nom|Gender=Neut|Number=Sing	3	subj	_	_
-2	ruže	_	_	_	_	0	_	_	_
-3	bola	byť	AUX	VLescf+	Aspect=Imp|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	_	_	_
-4	totiž	_	_	_	_	0	_	_	_
-5	jediná	_	_	_	_	0	_	_	_
-6	beletria	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	ktorú	_	_	_	_	0	_	_	_
-9	v	_	_	_	_	0	_	_	_
-10	jeho	_	_	_	_	0	_	_	_
-11	knižnici	_	_	_	_	0	_	_	_
-12	vyhrabala	_	_	_	_	0	_	_	_
-13	medzi	_	_	_	_	0	_	_	_
-14	odbornou	_	_	_	_	0	_	_	_
-15	literatúrou	_	_	_	_	0	_	_	_
-16	.	_	_	_	_	0	_	_	_
+1	To	to	DET	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	2	subj	_	_
+2	bola	byť	AUX	VLescf+	Aspect=Imp|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	_	_	_
+3	tá	_	_	_	_	0	_	_	_
+4	zločinecká	_	_	_	_	0	_	_	_
+5	časť	_	_	_	_	0	_	_	_
+6	komunistickej	_	_	_	_	0	_	_	_
+7	strany	_	_	_	_	0	_	_	_
+8	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Blythe	_	_	_	_	0	_	_	_
-2	ostala	_	_	_	_	0	_	_	_
-3	chvíľu	_	_	_	_	0	_	_	_
-4	ticho	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	čo	čo	PRON	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Int,Rel	7	subj	_	_
-7	bol	byť	AUX	VLesci+	Animacy=Inan|Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	_	_	_
-8	pre	_	_	_	_	0	_	_	_
-9	mňa	_	_	_	_	0	_	_	_
-10	jasný	_	_	_	_	0	_	_	_
-11	signál	_	_	_	_	0	_	_	_
-12	.	_	_	_	_	0	_	_	_
+1	Inak	_	_	_	_	0	_	_	_
+2	to	to	DET	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	3	subj	_	_
+3	bola	byť	AUX	VLescf+	Aspect=Imp|Gender=Fem|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	_	_	_
+4	príjemná	_	_	_	_	0	_	_	_
+5	zábava	_	_	_	_	0	_	_	_
+6	pri	_	_	_	_	0	_	_	_
+7	ľudovej	_	_	_	_	0	_	_	_
+8	hudbe	_	_	_	_	0	_	_	_
+9	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Bol	byť	AUX	VLesci+	Animacy=Inan|Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	_	_	_
+2	to	to	DET	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	1	subj	_	_
+3	prekrásny	_	_	_	_	0	_	_	_
+4	pohľad	_	_	_	_	0	_	_	_
+5	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Bol	byť	AUX	VLesci+	Animacy=Inan|Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	_	_	_
+2	to	to	DET	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	1	subj	_	_
+3	fantastický	_	_	_	_	0	_	_	_
+4	pocit	_	_	_	_	0	_	_	_
+5	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Bol	byť	AUX	VLesci+	Animacy=Inan|Aspect=Imp|Gender=Masc|Number=Sing|Polarity=Pos|Tense=Past|VerbForm=Part	0	_	_	_
+2	to	to	DET	PFns1	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	1	subj	_	_
+3	nádherný	_	_	_	_	0	_	_	_
+4	okamih	_	_	_	_	0	_	_	_
+5	:	_	_	_	_	0	_	_	_
+6	sedeli	_	_	_	_	0	_	_	_
+7	sme	_	_	_	_	0	_	_	_
+8	vedľa	_	_	_	_	0	_	_	_
+9	seba	_	_	_	_	0	_	_	_
+10	v	_	_	_	_	0	_	_	_
+11	prítmí	_	_	_	_	0	_	_	_
+12	autobusu	_	_	_	_	0	_	_	_
+13	a	_	_	_	_	0	_	_	_
+14	žlté	_	_	_	_	0	_	_	_
+15	pouličné	_	_	_	_	0	_	_	_
+16	osvetlenie	_	_	_	_	0	_	_	_
+17	ožiarilo	_	_	_	_	0	_	_	_
+18	Chrisovi	_	_	_	_	0	_	_	_
+19	tvár	_	_	_	_	0	_	_	_
+20	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

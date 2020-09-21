@@ -138,117 +138,82 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Tense.html">Back to Tense Polish-LFG page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="2-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>complement for auxiliary</i>(<a href="https://surfacesyntacticud.github.io/">comp:aux)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
-1	Zwykle	_	_	_	_	0	_	_	_
-2	są	być	AUX	fin:pl:ter:imperf	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	to	to	VERB	pred	Mood=Ind|Tense=Pres|VerbForm=Fin|VerbType=Quasi	2	comp:aux	_	_
-4	mniejsze	_	_	_	_	0	_	_	_
-5	pojedyncze	_	_	_	_	0	_	_	_
-6	okazy	_	_	_	_	0	_	_	_
-7	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
-1	Zmarszczywszy	zmarszczyć	VERB	pant:perf	Aspect=Perf|Tense=Past|VerbForm=Conv|Voice=Act	3	mod	_	_
-2	brwi	_	_	_	_	0	_	_	_
-3	zastanawiał	zastanawiać	VERB	praet:sg:m1:imperf	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|SubGender=Masc1|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
-4	się	_	_	_	_	0	_	_	_
-5	chwilę	_	_	_	_	0	_	_	_
-6	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
-1	Żołnierz	_	_	_	_	0	_	_	_
-2	nigdy	_	_	_	_	0	_	_	_
-3	nie	_	_	_	_	0	_	_	_
-4	wie	wiedzieć	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	kiedy	_	_	_	_	0	_	_	_
-7	je	jeść	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	comp:obj	_	_
-8	po	_	_	_	_	0	_	_	_
-9	raz	_	_	_	_	0	_	_	_
-10	ostatni	_	_	_	_	0	_	_	_
-11	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
-1	Nie	_	_	_	_	0	_	_	_
-2	dociera	docierać	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-3	do	_	_	_	_	0	_	_	_
-4	niego	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	co	_	_	_	_	0	_	_	_
-7	Chadaj	_	_	_	_	0	_	_	_
-8	mówi	mówić	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	subj	_	SpaceAfter=No
-9	.	_	_	_	_	0	_	_	_
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="2-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="2-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	-	_	_	_	_	0	_	_	_
+2	Wiecie	wiedzieć	VERB	fin:pl:sec:imperf	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	kto	_	_	_	_	0	_	_	_
+5	to	_	_	_	_	0	_	_	_
+6	jest	być	AUX	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:obj	_	_
+7	Andrzej	_	_	_	_	0	_	_	_
+8	Wroński	_	_	_	_	0	_	_	_
+9	?	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
-1	-	_	_	_	_	0	_	_	_
-2	A	_	_	_	_	0	_	_	_
-3	co	_	_	_	_	0	_	_	_
-4	to	to	VERB	pred	Mood=Ind|Tense=Pres|VerbForm=Fin|VerbType=Quasi	5	comp:aux	_	_
-5	było	być	AUX	praet:sg:n:imperf	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	_	_	_
-6	w	_	_	_	_	0	_	_	_
-7	nocy	_	_	_	_	0	_	_	_
-8	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	A	_	_	_	_	0	_	_	_
-2	to	to	VERB	pred	Mood=Ind|Tense=Pres|VerbForm=Fin|VerbType=Quasi	4	comp:aux	_	_
-3	pewnie	_	_	_	_	0	_	_	_
-4	był	być	AUX	praet:sg:m3:imperf	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|SubGender=Masc3|Tense=Past|VerbForm=Fin	0	_	_	_
-5	akurat	_	_	_	_	0	_	_	_
-6	chwyt	_	_	_	_	0	_	_	_
-7	zamierzony	_	_	_	_	0	_	_	_
-8	przez	_	_	_	_	0	_	_	_
-9	autora	_	_	_	_	0	_	_	_
-10	i	_	_	_	_	0	_	_	_
-11	głęboko	_	_	_	_	0	_	_	_
-12	uzasadniony	_	_	_	_	0	_	_	_
-13	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	-	_	_	_	_	0	_	_	_
-2	A	_	_	_	_	0	_	_	_
-3	więc	_	_	_	_	0	_	_	_
-4	niedługo	_	_	_	_	0	_	_	_
-5	będziemy	być	AUX	bedzie:pl:pri:imperf	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	_	_	_
-6	pisali	pisać	VERB	praet:pl:m1:imperf	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Plur|SubGender=Masc1|Tense=Past|VerbForm=Fin|Voice=Act	5	comp:aux	_	_
-7	o	_	_	_	_	0	_	_	_
-8	aferach	_	_	_	_	0	_	_	_
-9	korupcyjnych	_	_	_	_	0	_	_	_
-10	rządu	_	_	_	_	0	_	_	_
-11	Olszewskiego	_	_	_	_	0	_	_	_
-12	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	A	_	_	_	_	0	_	_	_
-2	wtedy	_	_	_	_	0	_	_	_
-3	to	to	VERB	pred	Mood=Ind|Tense=Pres|VerbForm=Fin|VerbType=Quasi	4	comp:aux	_	_
-4	była	być	AUX	praet:sg:f:imperf	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	_	_	_
-5	liczba	_	_	_	_	0	_	_	_
-6	magiczna	_	_	_	_	0	_	_	_
+1	Białoruś	_	_	_	_	0	_	_	_
+2	wie	wiedzieć	VERB	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	czym	_	_	_	_	0	_	_	_
+5	była	być	AUX	praet:sg:f:imperf	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	2	comp:obj	_	_
+6	Bereza	_	_	_	_	0	_	_	_
 7	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	–	_	_	_	_	0	_	_	_
-2	akurat	_	_	_	_	0	_	_	_
-3	będę	być	AUX	bedzie:sg:pri:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	_	_	_
-4	musiała	musieć	VERB	praet:sg:f:imperf	Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	3	comp:aux	_	SpaceAfter=No
-5	.	_	_	_	_	0	_	_	_
+1	Ciągle	_	_	_	_	0	_	_	_
+2	też	_	_	_	_	0	_	_	_
+3	nie	_	_	_	_	0	_	_	_
+4	wiadomo	wiadomo	VERB	pred	Mood=Ind|Tense=Pres|VerbForm=Fin|VerbType=Quasi	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	jaki	_	_	_	_	0	_	_	_
+7	będzie	być	AUX	bedzie:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	comp:obj	_	_
+8	pełny	_	_	_	_	0	_	_	_
+9	skład	_	_	_	_	0	_	_	_
+10	rady	_	_	_	_	0	_	_	_
+11	PRKCh	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Nadal	_	_	_	_	0	_	_	_
+2	nie	_	_	_	_	0	_	_	_
+3	wiedzą	wiedzieć	VERB	fin:pl:ter:imperf	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	jaka	_	_	_	_	0	_	_	_
+6	będzie	być	AUX	bedzie:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	comp:obj	_	_
+7	matura	_	_	_	_	0	_	_	_
+8	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Nie	_	_	_	_	0	_	_	_
+2	mówił	mówić	VERB	praet:sg:m1:imperf	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|SubGender=Masc1|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	co	_	_	_	_	0	_	_	_
+5	to	_	_	_	_	0	_	_	_
+6	jest	być	AUX	fin:sg:ter:imperf	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:obj	_	_
+7	prawda	_	_	_	_	0	_	_	_
+8	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Nie	_	_	_	_	0	_	_	_
+2	wiadomo	wiadomo	VERB	pred	Mood=Ind|Tense=Pres|VerbForm=Fin|VerbType=Quasi	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	ile	_	_	_	_	0	_	_	_
+5	głowic	_	_	_	_	0	_	_	_
+6	zostało	zostać	AUX	praet:sg:n:perf	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	2	comp:obj	_	_
+7	już	_	_	_	_	0	_	_	_
+8	wywiezionych	_	_	_	_	0	_	_	_
+9	do	_	_	_	_	0	_	_	_
+10	Rosji	_	_	_	_	0	_	_	_
+11	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

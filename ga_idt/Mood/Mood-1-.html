@@ -138,7 +138,7 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Mood.html">Back to Mood Irish-IDT page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="1-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="1-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Tá	bí	VERB	PresInd	Mood=Ind|Tense=Pres	0	_	_	_
 2	318,000	_	_	_	_	0	_	_	_
 3	de	_	_	_	_	0	_	_	_
@@ -159,34 +159,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
-1	'	_	_	_	_	0	_	_	_
-2	Tosnóidh	tosnaigh	VERB	VTI	Mood=Ind|Tense=Fut	16	comp:obj	_	_
-3	an	_	_	_	_	0	_	_	_
-4	Pharáid	_	_	_	_	0	_	_	_
-5	ag	_	_	_	_	0	_	_	_
-6	an	_	_	_	_	0	_	_	_
-7	Ospidéal	_	_	_	_	0	_	_	_
-8	agus	_	_	_	_	0	_	_	_
-9	tabharfaidh	_	_	_	_	0	_	_	_
-10	sí	_	_	_	_	0	_	_	_
-11	cuairt	_	_	_	_	0	_	_	_
-12	an	_	_	_	_	0	_	_	_
-13	bhaile	_	_	_	_	0	_	_	_
-14	'	_	_	_	_	0	_	_	_
-15	,	_	_	_	_	0	_	_	_
-16	arsa	arsa	VERB	PastInd	Mood=Ind|Tense=Past	0	_	_	_
-17	Feargus	_	_	_	_	0	_	_	_
-18	ó	_	_	_	_	0	_	_	_
-19	Flatharta	_	_	_	_	0	_	_	_
-20	,	_	_	_	_	0	_	_	_
-21	le	_	_	_	_	0	_	_	_
-22	Foinse	_	_	_	_	0	_	_	_
-23	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@relcl)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@relcl)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Chomh	_	_	_	_	0	_	_	_
 2	maith	_	_	_	_	0	_	_	_
 3	le	_	_	_	_	0	_	_	_
@@ -228,7 +201,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Chuaigh	téigh	VERB	VTI	Form=Len|Mood=Ind|Tense=Past	0	_	_	_
 2	sé	_	_	_	_	0	_	_	_
 3	i	_	_	_	_	0	_	_	_
@@ -254,7 +227,48 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj@prt)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>X</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Níor	_	_	_	_	0	_	_	_
+2	ghá	_	_	_	_	0	_	_	_
+3	dó	_	_	_	_	0	_	_	_
+4	ach	_	_	_	_	0	_	_	_
+5	féachaint	_	_	_	_	0	_	_	_
+6	ar	_	_	_	_	0	_	_	_
+7	chás	_	_	_	_	0	_	_	_
+8	na	_	_	_	_	0	_	_	_
+9	gceithre	_	_	_	_	0	_	_	_
+10	dhaonáireamh	_	_	_	_	0	_	_	_
+11	a	_	_	_	_	0	_	_	_
+12	deineadh	dein	X	CM	Dialect=Munster|Mood=Ind|Tense=Past|Voice=Auto	0	_	_	_
+13	idir	_	_	_	_	0	_	_	_
+14	1861	_	_	_	_	0	_	_	_
+15	agus	_	_	_	_	0	_	_	_
+16	1891	_	_	_	_	0	_	_	_
+17	agus	_	_	_	_	0	_	_	_
+18	a	_	_	_	_	0	_	_	_
+19	loisceadh	loisc	VERB	VT	Mood=Ind|Tense=Past|Voice=Auto	12	conj	_	_
+20	i	_	_	_	_	0	_	_	_
+21	rith	_	_	_	_	0	_	_	_
+22	an	_	_	_	_	0	_	_	_
+23	Chéad	_	_	_	_	0	_	_	_
+24	Chogadh	_	_	_	_	0	_	_	_
+25	Mhóir	_	_	_	_	0	_	_	_
+26	,	_	_	_	_	0	_	_	_
+27	chun	_	_	_	_	0	_	_	_
+28	tuiscint	_	_	_	_	0	_	_	_
+29	a	_	_	_	_	0	_	_	_
+30	bheith	_	_	_	_	0	_	_	_
+31	ag	_	_	_	_	0	_	_	_
+32	riarthóir	_	_	_	_	0	_	_	_
+33	ar	_	_	_	_	0	_	_	_
+34	an	_	_	_	_	0	_	_	_
+35	gcailliúint	_	_	_	_	0	_	_	_
+36	mhór	_	_	_	_	0	_	_	_
+37	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj@prt)</a> of the head token,  and the head token is <i>PART</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Faisean	_	_	_	_	0	_	_	_
 2	le	_	_	_	_	0	_	_	_
 3	Úna	_	_	_	_	0	_	_	_
@@ -275,7 +289,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>flat multiword expression</i>(<a href="https://universaldependencies.org/u/dep/flat.html">flat)</a> of the head token,  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>flat multiword expression</i>(<a href="https://universaldependencies.org/u/dep/flat.html">flat)</a> of the head token,  and the head token is <i>PART</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Tógaimis	_	_	_	_	0	_	_	_
 2	an	_	_	_	_	0	_	_	_
 3	'	_	_	_	_	0	_	_	_
@@ -341,54 +355,6 @@ span.displaynone { display: none; }
 42	theideal	_	_	_	_	0	_	_	_
 43	air	_	_	_	_	0	_	_	_
 44	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Dar	dar	VERB	PresInd	Mood=Ind|Tense=Pres	0	_	_	_
-2	leo	_	_	_	_	0	_	_	_
-3	,	_	_	_	_	0	_	_	_
-4	sa	_	_	_	_	0	_	_	_
-5	chás	_	_	_	_	0	_	_	_
-6	seo	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	bheidís	bí	VERB	Cond	Form=Len|Mood=Cnd|Number=Plur|Person=3	1	comp:obj	_	_
-9	ag	_	_	_	_	0	_	_	_
-10	géilleadh	_	_	_	_	0	_	_	_
-11	an	_	_	_	_	0	_	_	_
-12	iomarca	_	_	_	_	0	_	_	_
-13	dá	_	_	_	_	0	_	_	_
-14	neamhspleáchas	_	_	_	_	0	_	_	_
-15	náisiúnta	_	_	_	_	0	_	_	_
-16	don	_	_	_	_	0	_	_	_
-17	Aontas	_	_	_	_	0	_	_	_
-18	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	'	_	_	_	_	0	_	_	_
-2	Má	_	_	_	_	0	_	_	_
-3	chaitheann	_	_	_	_	0	_	_	_
-4	sé	_	_	_	_	0	_	_	_
-5	an	_	_	_	_	0	_	_	_
-6	lá	_	_	_	_	0	_	_	_
-7	inniu	_	_	_	_	0	_	_	_
-8	tá	bí	VERB	PresInd	Mood=Ind|Tense=Pres	20	comp:obj	_	_
-9	seans	_	_	_	_	0	_	_	_
-10	aige	_	_	_	_	0	_	_	_
-11	,	_	_	_	_	0	_	_	_
-12	tá	_	_	_	_	0	_	_	_
-13	sé	_	_	_	_	0	_	_	_
-14	ag	_	_	_	_	0	_	_	_
-15	dul	_	_	_	_	0	_	_	_
-16	trí	_	_	_	_	0	_	_	_
-17	fhaothú	_	_	_	_	0	_	_	_
-18	'	_	_	_	_	0	_	_	_
-19	a	_	_	_	_	0	_	_	_
-20	déarfadh	abair	VERB	VTI	Mood=Cnd	0	_	_	_
-21	duine	_	_	_	_	0	_	_	_
-22	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

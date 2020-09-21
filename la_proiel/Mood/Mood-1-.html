@@ -138,287 +138,258 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Mood.html">Back to Mood Latin-PROIEL page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="1-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>VERB</i> </li><pre><code class="language-conllu">
-1	Quidam	_	_	_	_	0	_	_	_
-2	autem	_	_	_	_	0	_	_	_
-3	ad	_	_	_	_	0	_	_	_
-4	eas	_	_	_	_	0	_	_	_
-5	laudes	_	_	_	_	0	_	_	_
-6	quas	_	_	_	_	0	_	_	_
-7	a	_	_	_	_	0	_	_	_
-8	patribus	_	_	_	_	0	_	_	_
-9	acceperunt	_	_	_	_	0	_	_	_
-10	addunt	addo	VERB	V-	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-11	aliquam	_	_	_	_	0	_	_	_
-12	suam	_	_	_	_	0	_	_	_
-13	ut	_	_	_	_	0	_	_	_
-14	hic	_	_	_	_	0	_	_	_
-15	idem	_	_	_	_	0	_	_	_
-16	Africanus	_	_	_	_	0	_	_	_
-17	eloquentia	_	_	_	_	0	_	_	_
-18	cumulavit	cumulo	VERB	V-	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	mod	_	ref=1.116
-19	bellicam	_	_	_	_	0	_	_	_
-20	gloriam	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>VERB</i> </li><pre><code class="language-conllu">
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="1-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>AUX</i> </li><pre><code class="language-conllu">
 1	nam	_	_	_	_	0	_	_	_
 2	et	_	_	_	_	0	_	_	_
 3	quod	_	_	_	_	0	_	_	_
-4	decet	_	_	_	_	0	_	_	_
+4	decet	decet	VERB	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	subj	_	ref=1.94
 5	honestum	_	_	_	_	0	_	_	_
-6	est	_	_	_	_	0	_	_	_
+6	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 7	et	_	_	_	_	0	_	_	_
 8	quod	_	_	_	_	0	_	_	_
 9	honestum	_	_	_	_	0	_	_	_
-10	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	subj	_	ref=1.94
-11	decet	decet	VERB	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+10	est	_	_	_	_	0	_	_	_
+11	decet	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>VERB</i> </li><pre><code class="language-conllu">
-1	Ut	_	_	_	_	0	_	_	_
-2	enim	_	_	_	_	0	_	_	_
-3	in	_	_	_	_	0	_	_	_
-4	corporibus	_	_	_	_	0	_	_	_
-5	magnae	_	_	_	_	0	_	_	_
-6	dissimilitudines	_	_	_	_	0	_	_	_
-7	sunt	_	_	_	_	0	_	_	_
-8	alios	_	_	_	_	0	_	_	_
-9	videmus	video	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	29	parataxis	_	ref=1.107
-10	velocitate	_	_	_	_	0	_	_	_
-11	ad	_	_	_	_	0	_	_	_
-12	cursum	_	_	_	_	0	_	_	_
-13	alios	_	_	_	_	0	_	_	_
-14	viribus	_	_	_	_	0	_	_	_
-15	ad	_	_	_	_	0	_	_	_
-16	luctandum	_	_	_	_	0	_	_	_
-17	valere	_	_	_	_	0	_	_	_
-18	itemque	_	_	_	_	0	_	_	_
-19	in	_	_	_	_	0	_	_	_
-20	formis	_	_	_	_	0	_	_	_
-21	aliis	_	_	_	_	0	_	_	_
-22	dignitatem	_	_	_	_	0	_	_	_
-23	inesse	_	_	_	_	0	_	_	_
-24	aliis	_	_	_	_	0	_	_	_
-25	venustatem	_	_	_	_	0	_	_	_
-26	sic	_	_	_	_	0	_	_	_
-27	in	_	_	_	_	0	_	_	_
-28	animis	_	_	_	_	0	_	_	_
-29	exsistunt	exsisto	VERB	V-	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-30	maiores	_	_	_	_	0	_	_	_
-31	etiam	_	_	_	_	0	_	_	_
-32	varietates	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>dislocated elements</i>(<a href="https://universaldependencies.org/u/dep/dislocated.html">dislocated)</a> of the head token,  and the head token is <i>VERB</i> </li><pre><code class="language-conllu">
-1	Ut	_	_	_	_	0	_	_	_
-2	enim	_	_	_	_	0	_	_	_
-3	sermone	_	_	_	_	0	_	_	_
-4	eo	_	_	_	_	0	_	_	_
-5	debemus	debeo	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	29	dislocated	_	ref=1.111
-6	uti	_	_	_	_	0	_	_	_
-7	qui	_	_	_	_	0	_	_	_
-8	innatus	_	_	_	_	0	_	_	_
-9	est	_	_	_	_	0	_	_	_
-10	nobis	_	_	_	_	0	_	_	_
-11	ne	_	_	_	_	0	_	_	_
-12	ut	_	_	_	_	0	_	_	_
-13	quidam	_	_	_	_	0	_	_	_
-14	Graeca	_	_	_	_	0	_	_	_
-15	verba	_	_	_	_	0	_	_	_
-16	inculcantes	_	_	_	_	0	_	_	_
-17	iure	_	_	_	_	0	_	_	_
-18	optimo	_	_	_	_	0	_	_	_
-19	rideamur	_	_	_	_	0	_	_	_
-20	sic	_	_	_	_	0	_	_	_
-21	in	_	_	_	_	0	_	_	_
-22	actiones	_	_	_	_	0	_	_	_
-23	omnem	_	_	_	_	0	_	_	_
-24	que	_	_	_	_	0	_	_	_
-25	vitam	_	_	_	_	0	_	_	_
-26	nullam	_	_	_	_	0	_	_	_
-27	discrepantiam	_	_	_	_	0	_	_	_
-28	conferre	_	_	_	_	0	_	_	_
-29	debemus	debeo	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@pass)</a> of the head token,  and the head token is <i>VERB</i> </li><pre><code class="language-conllu">
-1	Magna	_	_	_	_	0	_	_	_
-2	etiam	_	_	_	_	0	_	_	_
-3	illa	_	_	_	_	0	_	_	_
-4	communitas	_	_	_	_	0	_	_	_
-5	est	_	_	_	_	0	_	_	_
-6	quae	_	_	_	_	0	_	_	_
-7	conficitur	_	_	_	_	0	_	_	_
-8	ex	_	_	_	_	0	_	_	_
-9	beneficiis	_	_	_	_	0	_	_	_
-10	ultro	_	_	_	_	0	_	_	_
-11	et	_	_	_	_	0	_	_	_
-12	citro	_	_	_	_	0	_	_	_
-13	datis	_	_	_	_	0	_	_	_
-14	acceptis	_	_	_	_	0	_	_	_
-15	quae	_	_	_	_	0	_	_	_
-16	et	_	_	_	_	0	_	_	_
-17	mutua	_	_	_	_	0	_	_	_
-18	et	_	_	_	_	0	_	_	_
-19	grata	_	_	_	_	0	_	_	_
-20	dum	_	_	_	_	0	_	_	_
-21	sunt	_	_	_	_	0	_	_	_
-22	inter	_	_	_	_	0	_	_	_
-23	quos	_	_	_	_	0	_	_	_
-24	ea	_	_	_	_	0	_	_	_
-25	sunt	sum	AUX	V-	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	27	subj@pass	_	ref=1.56
-26	firma	_	_	_	_	0	_	_	_
-27	devinciuntur	devincio	VERB	V-	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	_	_	_
-28	societate	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>unk@fixed</i>(<a href="https://universaldependencies.org/">unk@fixed)</a> of the head token,  and the head token is <i>VERB</i> </li><pre><code class="language-conllu">
-1	Ludo	_	_	_	_	0	_	_	_
-2	autem	_	_	_	_	0	_	_	_
-3	et	_	_	_	_	0	_	_	_
-4	ioco	_	_	_	_	0	_	_	_
-5	uti	_	_	_	_	0	_	_	_
-6	illo	_	_	_	_	0	_	_	_
-7	quidem	_	_	_	_	0	_	_	_
-8	licet	_	_	_	_	0	_	_	_
-9	sed	_	_	_	_	0	_	_	_
-10	sicut	_	_	_	_	0	_	_	_
-11	somno	_	_	_	_	0	_	_	_
-12	et	_	_	_	_	0	_	_	_
-13	quietibus	_	_	_	_	0	_	_	_
-14	ceteris	_	_	_	_	0	_	_	_
-15	tum	_	_	_	_	0	_	_	_
-16	cum	_	_	_	_	0	_	_	_
-17	gravibus	_	_	_	_	0	_	_	_
-18	seriis	_	_	_	_	0	_	_	_
-19	que	_	_	_	_	0	_	_	_
-20	rebus	_	_	_	_	0	_	_	_
-21	satis	satisfacio	VERB	V-	Aspect=Perf|Mood=Sub|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
-22	fecerimus	fecerimus	VERB	V-	Aspect=Perf|Mood=Sub|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	21	unk@fixed	_	ref=1.103
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token,  and the head token is <i>VERB</i> </li><pre><code class="language-conllu">
-1	quoniam	_	_	_	_	0	_	_	_
-2	quidem	_	_	_	_	0	_	_	_
-3	notum	_	_	_	_	0	_	_	_
-4	signum	_	_	_	_	0	_	_	_
-5	factum	_	_	_	_	0	_	_	_
-6	est	_	_	_	_	0	_	_	_
-7	per	_	_	_	_	0	_	_	_
-8	eos	_	_	_	_	0	_	_	_
-9	omnibus	_	_	_	_	0	_	_	_
-10	habitantibus	_	_	_	_	0	_	_	_
-11	in	_	_	_	_	0	_	_	_
-12	Hierusalem	_	_	_	_	0	_	_	_
-13	manifestum	_	_	_	_	0	_	_	_
-14	et	_	_	_	_	0	_	_	_
-15	non	_	_	_	_	0	_	_	_
-16	possumus	possum	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-17	negare	nego	VERB	V-	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Pass	16	comp:pred	_	ref=ACTS_4.16
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>vocative</i>(<a href="https://universaldependencies.org/u/dep/vocative.html">vocative)</a> of the head token,  and the head token is <i>VERB</i> </li><pre><code class="language-conllu">
-1	nam	_	_	_	_	0	_	_	_
-2	quod	_	_	_	_	0	_	_	_
-3	inpossibile	_	_	_	_	0	_	_	_
-4	erat	sum	AUX	V-	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	22	vocative	_	ref=ROM_8.3
-5	legis	_	_	_	_	0	_	_	_
-6	in	_	_	_	_	0	_	_	_
-7	quo	_	_	_	_	0	_	_	_
-8	infirmabatur	_	_	_	_	0	_	_	_
-9	per	_	_	_	_	0	_	_	_
-10	carnem	_	_	_	_	0	_	_	_
-11	Deus	_	_	_	_	0	_	_	_
-12	Filium	_	_	_	_	0	_	_	_
-13	suum	_	_	_	_	0	_	_	_
-14	mittens	_	_	_	_	0	_	_	_
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>AUX</i> </li><pre><code class="language-conllu">
+1	Nam	_	_	_	_	0	_	_	_
+2	ut	_	_	_	_	0	_	_	_
+3	adversas	_	_	_	_	0	_	_	_
+4	res	_	_	_	_	0	_	_	_
+5	sic	_	_	_	_	0	_	_	_
+6	secundas	_	_	_	_	0	_	_	_
+7	immoderate	_	_	_	_	0	_	_	_
+8	ferre	_	_	_	_	0	_	_	_
+9	levitatis	_	_	_	_	0	_	_	_
+10	est	_	_	_	_	0	_	_	_
+11	praeclara	_	_	_	_	0	_	_	_
+12	que	_	_	_	_	0	_	_	_
+13	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+14	aequabilitas	_	_	_	_	0	_	_	_
 15	in	_	_	_	_	0	_	_	_
-16	similitudinem	_	_	_	_	0	_	_	_
-17	carnis	_	_	_	_	0	_	_	_
-18	peccati	_	_	_	_	0	_	_	_
-19	et	_	_	_	_	0	_	_	_
-20	de	_	_	_	_	0	_	_	_
-21	peccato	_	_	_	_	0	_	_	_
-22	damnavit	damno	VERB	V-	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
-23	peccatum	_	_	_	_	0	_	_	_
-24	in	_	_	_	_	0	_	_	_
-25	carne	_	_	_	_	0	_	_	_
+16	omni	_	_	_	_	0	_	_	_
+17	vita	_	_	_	_	0	_	_	_
+18	et	_	_	_	_	0	_	_	_
+19	idem	_	_	_	_	0	_	_	_
+20	semper	_	_	_	_	0	_	_	_
+21	vultus	_	_	_	_	0	_	_	_
+22	eadem	_	_	_	_	0	_	_	_
+23	que	_	_	_	_	0	_	_	_
+24	frons	_	_	_	_	0	_	_	_
+25	ut	_	_	_	_	0	_	_	_
+26	de	_	_	_	_	0	_	_	_
+27	Socrate	_	_	_	_	0	_	_	_
+28	itemque	_	_	_	_	0	_	_	_
+29	de	_	_	_	_	0	_	_	_
+30	Gaio	_	_	_	_	0	_	_	_
+31	Laelio	_	_	_	_	0	_	_	_
+32	accepimus	accipio	VERB	V-	Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	13	mod	_	ref=1.90
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@pass)</a> of the head token,  and the head token is <i>AUX</i> </li><pre><code class="language-conllu">
+1	quae	_	_	_	_	0	_	_	_
+2	si	_	_	_	_	0	_	_	_
+3	desederit	_	_	_	_	0	_	_	_
+4	magis	_	_	_	_	0	_	_	_
+5	erunt	sum	AUX	V-	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	0	_	_	_
+6	liquata	_	_	_	_	0	_	_	_
+7	quae	_	_	_	_	0	_	_	_
+8	scribam	scribo	VERB	V-	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	5	subj@pass	_	ref=2.12.3
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token,  and the head token is <i>AUX</i> </li><pre><code class="language-conllu">
+1	Quintilis	_	_	_	_	0	_	_	_
+2	si	_	_	_	_	0	_	_	_
+3	erit	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	0	_	_	_
+4	ut	_	_	_	_	0	_	_	_
+5	volumus	volo	VERB	V-	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	comp:pred	_	LId=1|ref=5.21.9
+6	in	_	_	_	_	0	_	_	_
+7	itinere	_	_	_	_	0	_	_	_
+8	est	_	_	_	_	0	_	_	_
+9	per	_	_	_	_	0	_	_	_
+10	provinciam	_	_	_	_	0	_	_	_
+11	redeuntibus	_	_	_	_	0	_	_	_
+12	consumendus	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>dislocated elements</i>(<a href="https://universaldependencies.org/u/dep/dislocated.html">dislocated)</a> of the head token,  and the head token is <i>AUX</i> </li><pre><code class="language-conllu">
+1	Animadvertendum	_	_	_	_	0	_	_	_
+2	est	_	_	_	_	0	_	_	_
+3	etiam	_	_	_	_	0	_	_	_
+4	quatenus	_	_	_	_	0	_	_	_
+5	sermo	_	_	_	_	0	_	_	_
+6	delectationem	_	_	_	_	0	_	_	_
+7	habeat	_	_	_	_	0	_	_	_
+8	et	_	_	_	_	0	_	_	_
+9	ut	_	_	_	_	0	_	_	_
+10	incipiendi	_	_	_	_	0	_	_	_
+11	ratio	_	_	_	_	0	_	_	_
+12	fuerit	sum	AUX	V-	Aspect=Perf|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	dislocated	_	ref=1.135
+13	ita	_	_	_	_	0	_	_	_
+14	sit	sum	AUX	V-	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+15	desinendi	_	_	_	_	0	_	_	_
+16	modus	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>AUX</i> </li><pre><code class="language-conllu">
+1	quamquam	_	_	_	_	0	_	_	_
+2	haec	_	_	_	_	0	_	_	_
+3	quidem	_	_	_	_	0	_	_	_
+4	res	_	_	_	_	0	_	_	_
+5	non	_	_	_	_	0	_	_	_
+6	solum	_	_	_	_	0	_	_	_
+7	ex	_	_	_	_	0	_	_	_
+8	domestica	_	_	_	_	0	_	_	_
+9	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+10	ratione	_	_	_	_	0	_	_	_
+11	attingit	attingo	VERB	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	parataxis	_	ref=1.76
+12	etiam	_	_	_	_	0	_	_	_
+13	bellicam	_	_	_	_	0	_	_	_
+14	quoniam	_	_	_	_	0	_	_	_
+15	vi	_	_	_	_	0	_	_	_
+16	manu	_	_	_	_	0	_	_	_
+17	que	_	_	_	_	0	_	_	_
+18	confecta	_	_	_	_	0	_	_	_
+19	est	_	_	_	_	0	_	_	_
+20	sed	_	_	_	_	0	_	_	_
+21	tamen	_	_	_	_	0	_	_	_
+22	id	_	_	_	_	0	_	_	_
+23	ipsum	_	_	_	_	0	_	_	_
+24	est	_	_	_	_	0	_	_	_
+25	gestum	_	_	_	_	0	_	_	_
+26	consilio	_	_	_	_	0	_	_	_
+27	urbano	_	_	_	_	0	_	_	_
+28	sine	_	_	_	_	0	_	_	_
+29	exercitu	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>complement for auxiliary</i>(<a href="https://surfacesyntacticud.github.io/">comp:aux)</a> of the head token,  and the head token is <i>AUX</i> </li><pre><code class="language-conllu">
+1	ipse	_	_	_	_	0	_	_	_
+2	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	comp:aux	_	ref=JOHN_1.27
+3	qui	_	_	_	_	0	_	_	_
+4	post	_	_	_	_	0	_	_	_
+5	me	_	_	_	_	0	_	_	_
+6	venturus	_	_	_	_	0	_	_	_
+7	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+8	qui	_	_	_	_	0	_	_	_
+9	ante	_	_	_	_	0	_	_	_
+10	me	_	_	_	_	0	_	_	_
+11	factus	_	_	_	_	0	_	_	_
+12	est	_	_	_	_	0	_	_	_
+13	cuius	_	_	_	_	0	_	_	_
+14	ego	_	_	_	_	0	_	_	_
+15	non	_	_	_	_	0	_	_	_
+16	sum	_	_	_	_	0	_	_	_
+17	dignus	_	_	_	_	0	_	_	_
+18	ut	_	_	_	_	0	_	_	_
+19	solvam	_	_	_	_	0	_	_	_
+20	eius	_	_	_	_	0	_	_	_
+21	corrigiam	_	_	_	_	0	_	_	_
+22	calciamenti	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>vocative</i>(<a href="https://universaldependencies.org/u/dep/vocative.html">vocative)</a> of the head token,  and the head token is <i>AUX</i> </li><pre><code class="language-conllu">
+1	iustus	_	_	_	_	0	_	_	_
+2	es	sum	AUX	V-	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+3	qui	_	_	_	_	0	_	_	_
+4	es	sum	AUX	V-	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	vocative	_	ref=REV_16.5
+5	et	_	_	_	_	0	_	_	_
+6	qui	_	_	_	_	0	_	_	_
+7	eras	_	_	_	_	0	_	_	_
+8	sanctus	_	_	_	_	0	_	_	_
+9	quia	_	_	_	_	0	_	_	_
+10	haec	_	_	_	_	0	_	_	_
+11	iudicasti	_	_	_	_	0	_	_	_
+12	quia	_	_	_	_	0	_	_	_
+13	sanguinem	_	_	_	_	0	_	_	_
+14	sanctorum	_	_	_	_	0	_	_	_
+15	et	_	_	_	_	0	_	_	_
+16	prophetarum	_	_	_	_	0	_	_	_
+17	fuderunt	_	_	_	_	0	_	_	_
+18	et	_	_	_	_	0	_	_	_
+19	sanguinem	_	_	_	_	0	_	_	_
+20	eis	_	_	_	_	0	_	_	_
+21	dedisti	_	_	_	_	0	_	_	_
+22	bibere	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
-1	ut	_	_	_	_	0	_	_	_
-2	adimpleretur	adimpleo	VERB	V-	Aspect=Imp|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	_	_	_
-3	quod	_	_	_	_	0	_	_	_
-4	dictum	_	_	_	_	0	_	_	_
-5	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	subj@pass	_	ref=MATT_2.15
-6	a	_	_	_	_	0	_	_	_
-7	Domino	_	_	_	_	0	_	_	_
-8	per	_	_	_	_	0	_	_	_
-9	prophetam	_	_	_	_	0	_	_	_
-10	dicentem	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
 1	et	_	_	_	_	0	_	_	_
-2	veniens	_	_	_	_	0	_	_	_
-3	habitavit	_	_	_	_	0	_	_	_
-4	in	_	_	_	_	0	_	_	_
-5	civitate	_	_	_	_	0	_	_	_
-6	quae	_	_	_	_	0	_	_	_
-7	vocatur	_	_	_	_	0	_	_	_
-8	Nazareth	_	_	_	_	0	_	_	_
-9	ut	_	_	_	_	0	_	_	_
-10	adimpleretur	adimpleo	VERB	V-	Aspect=Imp|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	_	_	_
-11	quod	_	_	_	_	0	_	_	_
-12	dictum	_	_	_	_	0	_	_	_
-13	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	subj@pass	_	ref=MATT_2.23
-14	per	_	_	_	_	0	_	_	_
-15	prophetas	_	_	_	_	0	_	_	_
-16	quoniam	_	_	_	_	0	_	_	_
-17	Nazareus	_	_	_	_	0	_	_	_
-18	vocabitur	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	ut	_	_	_	_	0	_	_	_
-2	adimpleretur	adimpleo	VERB	V-	Aspect=Imp|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	_	_	_
-3	quod	_	_	_	_	0	_	_	_
-4	dictum	_	_	_	_	0	_	_	_
-5	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	subj@pass	_	ref=MATT_4.14
-6	per	_	_	_	_	0	_	_	_
-7	Esaiam	_	_	_	_	0	_	_	_
-8	prophetam	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	discedite	discedo	VERB	V-	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-2	a	_	_	_	_	0	_	_	_
-3	me	_	_	_	_	0	_	_	_
+2	beatus	_	_	_	_	0	_	_	_
+3	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 4	qui	_	_	_	_	0	_	_	_
-5	operamini	operor	VERB	V-	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Pass	1	subj	_	ref=MATT_7.23
-6	iniquitatem	_	_	_	_	0	_	_	_
+5	non	_	_	_	_	0	_	_	_
+6	fuerit	sum	AUX	V-	Aspect=Perf|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	subj	_	ref=MATT_11.6
+7	scandalizatus	_	_	_	_	0	_	_	_
+8	in	_	_	_	_	0	_	_	_
+9	me	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	quicumque	_	_	_	_	0	_	_	_
+2	enim	_	_	_	_	0	_	_	_
+3	fecerit	facio	VERB	V-	Aspect=Perf|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	dislocated	_	ref=MATT_12.50
+4	voluntatem	_	_	_	_	0	_	_	_
+5	Patris	_	_	_	_	0	_	_	_
+6	mei	_	_	_	_	0	_	_	_
+7	qui	_	_	_	_	0	_	_	_
+8	in	_	_	_	_	0	_	_	_
+9	caelis	_	_	_	_	0	_	_	_
+10	est	_	_	_	_	0	_	_	_
+11	ipse	_	_	_	_	0	_	_	_
+12	meus	_	_	_	_	0	_	_	_
+13	et	_	_	_	_	0	_	_	_
+14	frater	_	_	_	_	0	_	_	_
+15	et	_	_	_	_	0	_	_	_
+16	soror	_	_	_	_	0	_	_	_
+17	et	_	_	_	_	0	_	_	_
+18	mater	_	_	_	_	0	_	_	_
+19	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	sed	_	_	_	_	0	_	_	_
+2	quicumque	_	_	_	_	0	_	_	_
+3	voluerit	volo	VERB	V-	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	8	subj	_	LId=1|ref=MATT_20.26
+4	inter	_	_	_	_	0	_	_	_
+5	vos	_	_	_	_	0	_	_	_
+6	maior	_	_	_	_	0	_	_	_
+7	fieri	_	_	_	_	0	_	_	_
+8	sit	sum	AUX	V-	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+9	vester	_	_	_	_	0	_	_	_
+10	minister	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	quicumque	_	_	_	_	0	_	_	_
+2	iuraverit	iuro	VERB	V-	Aspect=Perf|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	subj	_	ref=MATT_23.16
+3	per	_	_	_	_	0	_	_	_
+4	templum	_	_	_	_	0	_	_	_
+5	nihil	_	_	_	_	0	_	_	_
+6	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	et	_	_	_	_	0	_	_	_
-2	dico	dico	VERB	V-	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-3	huic	_	_	_	_	0	_	_	_
-4	vade	vado	VERB	V-	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	ref=MATT_8.9
-5	et	_	_	_	_	0	_	_	_
-6	vadit	_	_	_	_	0	_	_	_
+2	quicumque	_	_	_	_	0	_	_	_
+3	iuraverit	iuro	VERB	V-	Aspect=Perf|Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	subj	_	ref=MATT_23.18
+4	in	_	_	_	_	0	_	_	_
+5	altari	_	_	_	_	0	_	_	_
+6	nihil	_	_	_	_	0	_	_	_
+7	est	sum	AUX	V-	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
 
 </code></pre>
 

@@ -138,211 +138,207 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to Person Finnish-TDT page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="1-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
-1	Väkiluku	_	_	_	_	0	_	_	_
-2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-3	kasvanut	_	_	_	_	0	_	_	_
-4	vuoden	_	_	_	_	0	_	_	_
-5	aikana	_	_	_	_	0	_	_	_
-6	23 000	_	_	_	_	0	_	_	_
-7	hengellä	_	_	_	_	0	_	_	_
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="1-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="1-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Suomen	_	_	_	_	0	_	_	_
+2	väliluvun	_	_	_	_	0	_	_	_
+3	kasvu	_	_	_	_	0	_	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+5	suurinta	_	_	_	_	0	_	_	_
+6	15	_	_	_	_	0	_	_	_
+7	vuoteen	_	_	_	_	0	_	_	_
 8	ja	_	_	_	_	0	_	_	_
-9	näin	_	_	_	_	0	_	_	_
-10	kasvu	_	_	_	_	0	_	_	_
-11	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
-12	ollut	_	_	_	_	0	_	_	_
-13	0,4	_	_	_	_	0	_	_	_
-14	prosenttia	_	_	_	_	0	_	_	_
-15	.	_	_	_	_	0	_	_	_
+9	vuoden	_	_	_	_	0	_	_	_
+10	lopulla	_	_	_	_	0	_	_	_
+11	väkiluku	_	_	_	_	0	_	_	_
+12	yltää	_	_	_	_	0	_	_	_
+13	5,5	_	_	_	_	0	_	_	_
+14	miljoonaan	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	arvioi	arvioida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+17	Tilastokeskus	_	_	_	_	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>complement for auxiliary</i>(<a href="https://surfacesyntacticud.github.io/">comp:aux)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
-1	Vimin	_	_	_	_	0	_	_	_
-2	keskeinen	_	_	_	_	0	_	_	_
-3	idea	_	_	_	_	0	_	_	_
-4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	comp:aux	_	SpaceAfter=No
-5	,	_	_	_	_	0	_	_	_
-6	että	_	_	_	_	0	_	_	_
-7	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	0	_	_	_
-8	kumpaakaan	_	_	_	_	0	_	_	_
-9	kättä	_	_	_	_	0	_	_	_
-10	tarvitse	_	_	_	_	0	_	_	_
-11	siirtää	_	_	_	_	0	_	_	_
-12	näppäimistöltä	_	_	_	_	0	_	_	_
-13	(	_	_	_	_	0	_	_	_
-14	esimerkiksi	_	_	_	_	0	_	_	_
-15	hiirelle	_	_	_	_	0	_	_	_
-16	)	_	_	_	_	0	_	_	_
-17	minkään	_	_	_	_	0	_	_	_
-18	toiminnon	_	_	_	_	0	_	_	_
-19	,	_	_	_	_	0	_	_	_
-20	kuten	_	_	_	_	0	_	_	_
-21	tallentamisen	_	_	_	_	0	_	_	_
-22	,	_	_	_	_	0	_	_	_
-23	ajaksi	_	_	_	_	0	_	_	_
-24	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
-1	Varsinkin	_	_	_	_	0	_	_	_
-2	halpatyövomana	_	_	_	_	0	_	_	_
-3	laittomat	_	_	_	_	0	_	_	_
-4	siirtolaiset	_	_	_	_	0	_	_	_
-5	ovat	_	_	_	_	0	_	_	_
-6	joustava	_	_	_	_	0	_	_	_
-7	työvoimareservi	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	jolla	_	_	_	_	0	_	_	_
-10	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	0	_	_	_
-11	ole	_	_	_	_	0	_	_	_
-12	oikeuksia	_	_	_	_	0	_	_	_
-13	,	_	_	_	_	0	_	_	_
-14	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	mod	_	_
-15	kysymyksessä	_	_	_	_	0	_	_	_
-16	työturvallisuus	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	työajat	_	_	_	_	0	_	_	_
-19	tai	_	_	_	_	0	_	_	_
-20	palkat	_	_	_	_	0	_	_	_
-21	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
-1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-2	meistä	_	_	_	_	0	_	_	_
-3	itsestämme	_	_	_	_	0	_	_	_
-4	kiinni	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	kuinka	_	_	_	_	0	_	_	_
-7	kauas	_	_	_	_	0	_	_	_
-8	kantoinen	_	_	_	_	0	_	_	_
-9	sen	_	_	_	_	0	_	_	_
-10	antama	_	_	_	_	0	_	_	_
-11	selviytymisen	_	_	_	_	0	_	_	_
-12	,	_	_	_	_	0	_	_	_
-13	unelmien	_	_	_	_	0	_	_	_
-14	toteuttamisen	_	_	_	_	0	_	_	_
-15	ja	_	_	_	_	0	_	_	_
-16	kiitollisuuden	_	_	_	_	0	_	_	_
-17	tunne	_	_	_	_	0	_	_	_
-18	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	subj	_	SpaceAfter=No
-19	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@cop)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
-1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	subj@cop	_	_
-2	oo	_	_	_	_	0	_	_	_
-3	valoo	_	_	_	_	0	_	_	_
-4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-5	suomalaisen	_	_	_	_	0	_	_	_
-6	Popeda-yhtyeen	_	_	_	_	0	_	_	_
-7	kymmenes	_	_	_	_	0	_	_	_
-8	albumi	_	_	_	_	0	_	_	_
-9	.	_	_	_	_	0	_	_	_
+<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Tapahtuma	_	_	_	_	0	_	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+3	kerännyt	_	_	_	_	0	_	_	_
+4	vuosi	_	_	_	_	0	_	_	_
+5	vuodelta	_	_	_	_	0	_	_	_
+6	enemmän	_	_	_	_	0	_	_	_
+7	kävijöitä	_	_	_	_	0	_	_	_
+8	–	_	_	_	_	0	_	_	_
+9	vuonna	_	_	_	_	0	_	_	_
+10	2005	_	_	_	_	0	_	_	_
+11	järjestetyssä	_	_	_	_	0	_	_	_
+12	ensimmäisessä	_	_	_	_	0	_	_	_
+13	tapahtumassa	_	_	_	_	0	_	_	_
+14	kävijöitä	_	_	_	_	0	_	_	_
+15	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+16	noin	_	_	_	_	0	_	_	_
+17	tuhat	_	_	_	_	0	_	_	_
+18	,	_	_	_	_	0	_	_	_
+19	vuonna	_	_	_	_	0	_	_	_
+20	2006	_	_	_	_	0	_	_	_
+21	noin	_	_	_	_	0	_	_	_
+22	1 800	_	_	_	_	0	_	_	_
+23	ja	_	_	_	_	0	_	_	_
+24	vuonna	_	_	_	_	0	_	_	_
+25	2008	_	_	_	_	0	_	_	_
+26	noin	_	_	_	_	0	_	_	_
+27	2 800	_	_	_	_	0	_	_	_
+28	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <br></ul>	<br><h2>Disagree Examples:</h2><pre><code class="language-conllu">
-1	Jännittävää	_	_	_	_	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	kun	_	_	_	_	0	_	_	_
-4	armeijassa	_	_	_	_	0	_	_	_
-5	ollessani	_	_	_	_	0	_	_	_
-6	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	_	_	_
-7	sulkeisista	_	_	_	_	0	_	_	_
-8	pitänyt	_	_	_	_	0	_	_	_
-9	,	_	_	_	_	0	_	_	_
-10	mutta	_	_	_	_	0	_	_	_
-11	nyt	_	_	_	_	0	_	_	_
-12	toiminta	_	_	_	_	0	_	_	_
-13	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
-14	ihan	_	_	_	_	0	_	_	_
-15	hauskaa	_	_	_	_	0	_	_	_
-16	.	_	_	_	_	0	_	_	_
+1	Samalla	_	_	_	_	0	_	_	_
+2	voisi	voida	AUX	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	0	_	_	_
+3	laatikon	_	_	_	_	0	_	_	_
+4	päälle	_	_	_	_	0	_	_	_
+5	kirjoittaa	_	_	_	_	0	_	_	_
+6	:	_	_	_	_	0	_	_	_
+7	”	_	_	_	_	0	_	_	_
+8	Tämän	_	_	_	_	0	_	_	_
+9	lapseni	_	_	_	_	0	_	_	_
+10	heittävät	heittää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+11	roskiin	_	_	_	_	0	_	_	_
+12	purkaessaan	_	_	_	_	0	_	_	_
+13	jäämistöäni	_	_	_	_	0	_	_	_
+14	vuonna	_	_	_	_	0	_	_	_
+15	XXXX	_	_	_	_	0	_	_	_
+16	…	_	_	_	_	0	_	_	_
+17	”	_	_	_	_	0	_	_	_
+18	: D	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Kaksi	_	_	_	_	0	_	_	_
-2	kesää	_	_	_	_	0	_	_	_
-3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-4	haaveillut	_	_	_	_	0	_	_	_
-5	vanhanaikaisten	_	_	_	_	0	_	_	_
-6	puisten	_	_	_	_	0	_	_	_
-7	kattotikkaiden	_	_	_	_	0	_	_	_
-8	tekemisestä	_	_	_	_	0	_	_	_
-9	tai	_	_	_	_	0	_	_	_
-10	parin	_	_	_	_	0	_	_	_
-11	puutarhahuonekalun	_	_	_	_	0	_	_	_
-12	rakentamisesta	_	_	_	_	0	_	_	_
-13	,	_	_	_	_	0	_	_	_
-14	mutta	_	_	_	_	0	_	_	_
-15	vielä	_	_	_	_	0	_	_	_
-16	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	conj	_	_
-17	ole	_	_	_	_	0	_	_	_
-18	ehtinyt	_	_	_	_	0	_	_	_
-19	...	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-2	kauan	_	_	_	_	0	_	_	_
-3	puhuneet	_	_	_	_	0	_	_	_
-4	omakotitalosta	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	mutta	_	_	_	_	0	_	_	_
-7	kumpikaan	_	_	_	_	0	_	_	_
-8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	1	conj	_	_
-9	ole	_	_	_	_	0	_	_	_
-10	ihan	_	_	_	_	0	_	_	_
-11	varma	_	_	_	_	0	_	_	_
-12	,	_	_	_	_	0	_	_	_
-13	haluaisiko	_	_	_	_	0	_	_	_
-14	sellaisen	_	_	_	_	0	_	_	_
-15	sittenkään	_	_	_	_	0	_	_	_
-16	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Kaikista	_	_	_	_	0	_	_	_
-2	mieluiten	_	_	_	_	0	_	_	_
-3	olisin	olla	AUX	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	_	_	_
-4	viettänyt	_	_	_	_	0	_	_	_
-5	päiväni	_	_	_	_	0	_	_	_
-6	makuupussissa	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	mutta	_	_	_	_	0	_	_	_
-9	kun	_	_	_	_	0	_	_	_
-10	siinä	_	_	_	_	0	_	_	_
-11	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
-12	hieman	_	_	_	_	0	_	_	_
-13	vaikea	_	_	_	_	0	_	_	_
-14	kävellä	_	_	_	_	0	_	_	_
-15	.	_	_	_	_	0	_	_	_
-16	;)	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Tuotteista	_	_	_	_	0	_	_	_
-2	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-3	lukea	_	_	_	_	0	_	_	_
-4	lisää	_	_	_	_	0	_	_	_
-5	ja	_	_	_	_	0	_	_	_
-6	niistä	_	_	_	_	0	_	_	_
-7	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
-8	tilata	_	_	_	_	0	_	_	_
-9	Ethnic	_	_	_	_	0	_	_	_
-10	Cosmeticsin	_	_	_	_	0	_	_	_
-11	kotisivulta	_	_	_	_	0	_	_	_
+1	”	_	_	_	_	0	_	_	_
+2	30:n	_	_	_	_	0	_	_	_
+3	vauhti	_	_	_	_	0	_	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	0	_	_	_
+5	liene	_	_	_	_	0	_	_	_
+6	liioiteltua	_	_	_	_	0	_	_	_
+7	50:n	_	_	_	_	0	_	_	_
+8	alueella	_	_	_	_	0	_	_	_
+9	”	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	mutisen	mutista	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	SpaceAfter=No
 12	.	_	_	_	_	0	_	_	_
-13	:)	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Tai	_	_	_	_	0	_	_	_
+2	se	_	_	_	_	0	_	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+4	-	_	_	_	_	0	_	_	_
+5	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+6	oleta	_	_	_	_	0	_	_	_
+7	sitä	_	_	_	_	0	_	_	_
+8	teidän	_	_	_	_	0	_	_	_
+9	osalta	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	mutta	_	_	_	_	0	_	_	_
+12	niiden	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	jotka	_	_	_	_	0	_	_	_
+15	tekivät	_	_	_	_	0	_	_	_
+16	sopimuksen	_	_	_	_	0	_	_	_
+17	sillä	_	_	_	_	0	_	_	_
+18	tavalla	_	_	_	_	0	_	_	_
+19	ja	_	_	_	_	0	_	_	_
+20	jotka	_	_	_	_	0	_	_	_
+21	myös	_	_	_	_	0	_	_	_
+22	soveltavat	_	_	_	_	0	_	_	_
+23	turvallisuuslauseketta	_	_	_	_	0	_	_	_
+24	niin	_	_	_	_	0	_	_	_
+25	yksipuolisesti	_	_	_	_	0	_	_	_
+26	-	_	_	_	_	0	_	_	_
+27	kyynistä	_	_	_	_	0	_	_	_
+28	asianomaisen	_	_	_	_	0	_	_	_
+29	väestön	_	_	_	_	0	_	_	_
+30	ongelmien	_	_	_	_	0	_	_	_
+31	ylenkatsomista	_	_	_	_	0	_	_	_
+32	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Mielestäni	_	_	_	_	0	_	_	_
+2	tärkeintä	_	_	_	_	0	_	_	_
+3	on	_	_	_	_	0	_	_	_
+4	ennen	_	_	_	_	0	_	_	_
+5	kaikkea	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	että	_	_	_	_	0	_	_	_
+8	meillä	_	_	_	_	0	_	_	_
+9	on	_	_	_	_	0	_	_	_
+10	täysin	_	_	_	_	0	_	_	_
+11	johdonmukainen	_	_	_	_	0	_	_	_
+12	lainsäädäntö	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	ja	_	_	_	_	0	_	_	_
+15	1 000	_	_	_	_	0	_	_	_
+16	metrin	_	_	_	_	0	_	_	_
+17	syvyyttä	_	_	_	_	0	_	_	_
+18	koskevan	_	_	_	_	0	_	_	_
+19	ongelman	_	_	_	_	0	_	_	_
+20	ytimenä	_	_	_	_	0	_	_	_
+21	on	_	_	_	_	0	_	_	_
+22	se	_	_	_	_	0	_	_	_
+23	,	_	_	_	_	0	_	_	_
+24	että	_	_	_	_	0	_	_	_
+25	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+26	hyödytöntä	_	_	_	_	0	_	_	_
+27	kieltää	_	_	_	_	0	_	_	_
+28	kalastus	_	_	_	_	0	_	_	_
+29	alle	_	_	_	_	0	_	_	_
+30	1 000	_	_	_	_	0	_	_	_
+31	metrin	_	_	_	_	0	_	_	_
+32	syvyydessä	_	_	_	_	0	_	_	_
+33	muilla	_	_	_	_	0	_	_	_
+34	Euroopan	_	_	_	_	0	_	_	_
+35	yhteisön	_	_	_	_	0	_	_	_
+36	vesillä	_	_	_	_	0	_	_	_
+37	ja	_	_	_	_	0	_	_	_
+38	samanaikaisesti	_	_	_	_	0	_	_	_
+39	sallia	_	_	_	_	0	_	_	_
+40	kalastus	_	_	_	_	0	_	_	_
+41	1 000	_	_	_	_	0	_	_	_
+42	metrin	_	_	_	_	0	_	_	_
+43	syvyydessä	_	_	_	_	0	_	_	_
+44	Euroopan	_	_	_	_	0	_	_	_
+45	yhteisön	_	_	_	_	0	_	_	_
+46	vesillä	_	_	_	_	0	_	_	_
+47	-	_	_	_	_	0	_	_	_
+48	tässä	_	_	_	_	0	_	_	_
+49	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	25	parataxis	_	_
+50	ole	_	_	_	_	0	_	_	_
+51	lainsäädännön	_	_	_	_	0	_	_	_
+52	ympäristönäkökohdan	_	_	_	_	0	_	_	_
+53	kannalta	_	_	_	_	0	_	_	_
+54	mitään	_	_	_	_	0	_	_	_
+55	järkeä	_	_	_	_	0	_	_	_
+56	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Virnistys	_	_	_	_	0	_	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+3	haaste	_	_	_	_	0	_	_	_
+4	:	_	_	_	_	0	_	_	_
+5	Musta	_	_	_	_	0	_	_	_
+6	sekä	_	_	_	_	0	_	_	_
+7	Valkoinen	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+10	aika	_	_	_	_	0	_	_	_
+11	pelata	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

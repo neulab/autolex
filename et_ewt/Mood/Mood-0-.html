@@ -138,7 +138,7 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="Mood.html">Back to Mood Estonian-EWT page</a></li>
-<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="0-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token, </li><pre><code class="language-conllu">
+<h2>Distribution of features within this leaf </h2><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Relation.png" alt="Relation" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%; "><img src="0-Head-POS.png" alt="head-pos" style="width:100%"></p><p style = "float: left; font-size: 15pt; text-align: center; width: 33%;"><img src="0-Child-POS.png" alt="child-pos" style="width:100%"></p><br><h2>Agreement Rules sorted by frequency.</h2> <ul><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Garantii	_	_	_	_	0	_	_	_
 2	on	_	_	_	_	0	_	_	_
 3	ilmselt	_	_	_	_	0	_	_	_
@@ -179,7 +179,86 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token, </li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Enda	_	_	_	_	0	_	_	_
+2	meelest	_	_	_	_	0	_	_	_
+3	hoian	hoidma	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+4	oma	_	_	_	_	0	_	_	_
+5	Samsungi	_	_	_	_	0	_	_	_
+6	üsna	_	_	_	_	0	_	_	_
+7	hoolega	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	lisaks	_	_	_	_	0	_	_	_
+10	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+11	ta	_	_	_	_	0	_	_	_
+12	alati	_	_	_	_	0	_	_	_
+13	koti	_	_	_	_	0	_	_	_
+14	sees	_	_	_	_	0	_	_	_
+15	ka	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	kui	_	_	_	_	0	_	_	_
+18	taskus	_	_	_	_	0	_	_	_
+19	või	_	_	_	_	0	_	_	_
+20	laual	_	_	_	_	0	_	_	_
+21	või	_	_	_	_	0	_	_	_
+22	kuskil	_	_	_	_	0	_	_	_
+23	on	_	_	_	_	0	_	_	_
+24	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	1	_	_	_	_	0	_	_	_
+2	ei	_	_	_	_	0	_	_	_
+3	ole	olema	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+4	massiline	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	ja	_	_	_	_	0	_	_	_
+7	võttes	_	_	_	_	0	_	_	_
+8	konsentratsiooniks	_	_	_	_	0	_	_	_
+9	see	_	_	_	_	0	_	_	_
+10	siin	_	_	_	_	0	_	_	_
+11	+	_	_	_	_	0	_	_	_
+12	froniuse	_	_	_	_	0	_	_	_
+13	oma	_	_	_	_	0	_	_	_
+14	siis	_	_	_	_	0	_	_	_
+15	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+16	see	_	_	_	_	0	_	_	_
+17	väga	_	_	_	_	0	_	_	_
+18	väike	_	_	_	_	0	_	_	_
+19	konsentratsioon	_	_	_	_	0	_	_	_
+20	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>conjunct</i>(<a href="https://universaldependencies.org/u/dep/conj.html">conj)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Aga	_	_	_	_	0	_	_	_
+2	kus	_	_	_	_	0	_	_	_
+3	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+4	kirjas	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	et	_	_	_	_	0	_	_	_
+7	telo	_	_	_	_	0	_	_	_
+8	on	_	_	_	_	0	_	_	_
+9	katki	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	kõik	_	_	_	_	0	_	_	_
+12	ju	_	_	_	_	0	_	_	_
+13	väidavad	väitma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+14	,	_	_	_	_	0	_	_	_
+15	et	_	_	_	_	0	_	_	_
+16	neil	_	_	_	_	0	_	_	_
+17	ka	_	_	_	_	0	_	_	_
+18	krõbiseb	_	_	_	_	0	_	_	_
+19	ja	_	_	_	_	0	_	_	_
+20	mitte	_	_	_	_	0	_	_	_
+21	ainult	_	_	_	_	0	_	_	_
+22	sungid	_	_	_	_	0	_	_	_
+23	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	ma	_	_	_	_	0	_	_	_
 2	spets	_	_	_	_	0	_	_	_
 3	lõpetasin	lõpetama	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
@@ -214,27 +293,62 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token, </li><pre><code class="language-conllu">
-1	Tormates	_	_	_	_	0	_	_	_
-2	põlevasse	_	_	_	_	0	_	_	_
-3	majja	_	_	_	_	0	_	_	_
-4	nad	_	_	_	_	0	_	_	_
-5	teavad	teadma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-6	,	_	_	_	_	0	_	_	_
-7	mis	_	_	_	_	0	_	_	_
-8	teha	_	_	_	_	0	_	_	_
-9	tuleb	tulema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	comp:obj	_	SpaceAfter=No
-10	,	_	_	_	_	0	_	_	_
-11	et	_	_	_	_	0	_	_	_
-12	olukord	_	_	_	_	0	_	_	_
-13	kontrolli	_	_	_	_	0	_	_	_
-14	alla	_	_	_	_	0	_	_	_
-15	saada	_	_	_	_	0	_	_	_
-16	.	_	_	_	_	0	_	_	_
+<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Inimesed	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	kes	_	_	_	_	0	_	_	_
+4	võitlevad	_	_	_	_	0	_	_	_
+5	iga	_	_	_	_	0	_	_	_
+6	päev	_	_	_	_	0	_	_	_
+7	paanika	_	_	_	_	0	_	_	_
+8	hoogudega	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+11	tegelikult	_	_	_	_	0	_	_	_
+12	väga	_	_	_	_	0	_	_	_
+13	julged	_	_	_	_	0	_	_	_
+14	-	_	_	_	_	0	_	_	_
+15	igal	_	_	_	_	0	_	_	_
+16	hommikul	_	_	_	_	0	_	_	_
+17	nad	_	_	_	_	0	_	_	_
+18	teavad	teadma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	parataxis	_	SpaceAfter=No
+19	,	_	_	_	_	0	_	_	_
+20	et	_	_	_	_	0	_	_	_
+21	tõenäoliselt	_	_	_	_	0	_	_	_
+22	varsti	_	_	_	_	0	_	_	_
+23	jälle	_	_	_	_	0	_	_	_
+24	tuleb	_	_	_	_	0	_	_	_
+25	hoog	_	_	_	_	0	_	_	_
+26	,	_	_	_	_	0	_	_	_
+27	mis	_	_	_	_	0	_	_	_
+28	su	_	_	_	_	0	_	_	_
+29	jalust	_	_	_	_	0	_	_	_
+30	maha	_	_	_	_	0	_	_	_
+31	niidab	_	_	_	_	0	_	_	_
+32	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>complement for auxiliary</i>(<a href="https://surfacesyntacticud.github.io/">comp:aux)</a> of the head token, </li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Tabasalulauri	_	_	_	_	0	_	_	_
+2	kirjutas	kirjutama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+3	:	_	_	_	_	0	_	_	_
+4	kui	_	_	_	_	0	_	_	_
+5	nüüd	_	_	_	_	0	_	_	_
+6	õigesti	_	_	_	_	0	_	_	_
+7	mäletan	_	_	_	_	0	_	_	_
+8	siis	_	_	_	_	0	_	_	_
+9	sama	_	_	_	_	0	_	_	_
+10	probleem	_	_	_	_	0	_	_	_
+11	oli	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+12	ka	_	_	_	_	0	_	_	_
+13	iphone	_	_	_	_	0	_	_	_
+14	4s-il	_	_	_	_	0	_	_	_
+15	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>complement for auxiliary</i>(<a href="https://surfacesyntacticud.github.io/">comp:aux)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Mõnikord	_	_	_	_	0	_	_	_
 2	ka	_	_	_	_	0	_	_	_
 3	teiste	_	_	_	_	0	_	_	_
@@ -255,7 +369,172 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token, </li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>parataxis</i>(<a href="https://universaldependencies.org/u/dep/parataxis.html">parataxis)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Siin	_	_	_	_	0	_	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+3	minu	_	_	_	_	0	_	_	_
+4	arvamus	_	_	_	_	0	_	_	_
+5	asjade	_	_	_	_	0	_	_	_
+6	kohta	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	mis	_	_	_	_	0	_	_	_
+9	hoiavad	_	_	_	_	0	_	_	_
+10	sind	_	_	_	_	0	_	_	_
+11	tagasi	_	_	_	_	0	_	_	_
+12	oma	_	_	_	_	0	_	_	_
+13	elu	_	_	_	_	0	_	_	_
+14	elamast	_	_	_	_	0	_	_	_
+15	:	_	_	_	_	0	_	_	_
+16	IGAÜKS	_	_	_	_	0	_	_	_
+17	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+18	võimeline	_	_	_	_	0	_	_	_
+19	saama	_	_	_	_	0	_	_	_
+20	võitu	_	_	_	_	0	_	_	_
+21	nendest	_	_	_	_	0	_	_	_
+22	OMA	_	_	_	_	0	_	_	_
+23	hirmudest	_	_	_	_	0	_	_	_
+24	!!!	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Tormates	_	_	_	_	0	_	_	_
+2	põlevasse	_	_	_	_	0	_	_	_
+3	majja	_	_	_	_	0	_	_	_
+4	nad	_	_	_	_	0	_	_	_
+5	teavad	teadma	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	mis	_	_	_	_	0	_	_	_
+8	teha	_	_	_	_	0	_	_	_
+9	tuleb	tulema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	comp:obj	_	SpaceAfter=No
+10	,	_	_	_	_	0	_	_	_
+11	et	_	_	_	_	0	_	_	_
+12	olukord	_	_	_	_	0	_	_	_
+13	kontrolli	_	_	_	_	0	_	_	_
+14	alla	_	_	_	_	0	_	_	_
+15	saada	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Ni	_	_	_	_	0	_	_	_
+2	paljud	_	_	_	_	0	_	_	_
+3	nimesed	_	_	_	_	0	_	_	_
+4	on	_	_	_	_	0	_	_	_
+5	oma	_	_	_	_	0	_	_	_
+6	mures	_	_	_	_	0	_	_	_
+7	üksi	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	sest	_	_	_	_	0	_	_	_
+10	neil	_	_	_	_	0	_	_	_
+11	pole	_	_	_	_	0	_	_	_
+12	kellegiga	_	_	_	_	0	_	_	_
+13	rääkida	_	_	_	_	0	_	_	_
+14	ja	_	_	_	_	0	_	_	_
+15	inimesed	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	kes	_	_	_	_	0	_	_	_
+18	ise	_	_	_	_	0	_	_	_
+19	neid	_	_	_	_	0	_	_	_
+20	hooge	_	_	_	_	0	_	_	_
+21	ei	_	_	_	_	0	_	_	_
+22	põe	_	_	_	_	0	_	_	_
+23	ei	_	_	_	_	0	_	_	_
+24	saa	saama	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+25	ka	_	_	_	_	0	_	_	_
+26	hästi	_	_	_	_	0	_	_	_
+27	aru	_	_	_	_	0	_	_	_
+28	,	_	_	_	_	0	_	_	_
+29	millest	_	_	_	_	0	_	_	_
+30	nad	_	_	_	_	0	_	_	_
+31	räägivad	rääkima	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	24	comp:pred	_	SpaceAfter=No
+32	!	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>direct object complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:obj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Inimesed	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	kes	_	_	_	_	0	_	_	_
+4	ei	_	_	_	_	0	_	_	_
+5	tea	teadma	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	mis	_	_	_	_	0	_	_	_
+8	on	olema	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	comp:obj	_	_
+9	paanikahäire	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	ei	_	_	_	_	0	_	_	_
+12	mõista	_	_	_	_	0	_	_	_
+13	sageli	_	_	_	_	0	_	_	_
+14	selle	_	_	_	_	0	_	_	_
+15	olemust	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	Nüüd	_	_	_	_	0	_	_	_
+2	oli	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	_	_	_
+3	küte	_	_	_	_	0	_	_	_
+4	jälle	_	_	_	_	0	_	_	_
+5	roppkallis	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	nii	_	_	_	_	0	_	_	_
+8	et	_	_	_	_	0	_	_	_
+9	pensionist	_	_	_	_	0	_	_	_
+10	jäi	jääma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	mod	_	_
+11	pärast	_	_	_	_	0	_	_	_
+12	kohustuslike	_	_	_	_	0	_	_	_
+13	maksude	_	_	_	_	0	_	_	_
+14	(	_	_	_	_	0	_	_	_
+15	korter	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	elekter	_	_	_	_	0	_	_	_
+18	,	_	_	_	_	0	_	_	_
+19	telefon	_	_	_	_	0	_	_	_
+20	)	_	_	_	_	0	_	_	_
+21	järele	_	_	_	_	0	_	_	_
+22	vaid	_	_	_	_	0	_	_	_
+23	10	_	_	_	_	0	_	_	_
+24	krooni	_	_	_	_	0	_	_	_
+25	päeva	_	_	_	_	0	_	_	_
+26	kohta	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
+1	tead	_	_	_	_	0	_	_	_
+2	sa	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	kui	_	_	_	_	0	_	_	_
+5	palju	_	_	_	_	0	_	_	_
+6	kristlasi	_	_	_	_	0	_	_	_
+7	tapeti	tapma	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	_	_	_
+8	lõuna	_	_	_	_	0	_	_	_
+9	koreas	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	enne	_	_	_	_	0	_	_	_
+12	kui	_	_	_	_	0	_	_	_
+13	tuli	tulema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	mod	_	_
+14	seal	_	_	_	_	0	_	_	_
+15	ärkamine	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	nii	_	_	_	_	0	_	_	_
+18	et	_	_	_	_	0	_	_	_
+19	umbes	_	_	_	_	0	_	_	_
+20	iga	_	_	_	_	0	_	_	_
+21	3.	_	_	_	_	0	_	_	_
+22	lõuna	_	_	_	_	0	_	_	_
+23	korealane	_	_	_	_	0	_	_	_
+24	oli	_	_	_	_	0	_	_	_
+25	kristlane	_	_	_	_	0	_	_	_
+26	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
 1	ja	_	_	_	_	0	_	_	_
 2	kui	_	_	_	_	0	_	_	_
 3	saab	_	_	_	_	0	_	_	_
@@ -285,27 +564,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token, </li><pre><code class="language-conllu">
-1	Võibolla	_	_	_	_	0	_	_	_
-2	liiga	_	_	_	_	0	_	_	_
-3	hommik	_	_	_	_	0	_	_	_
-4	ja	_	_	_	_	0	_	_	_
-5	ma	_	_	_	_	0	_	_	_
-6	ei	_	_	_	_	0	_	_	_
-7	saa	saama	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
-8	päris	_	_	_	_	0	_	_	_
-9	täpselt	_	_	_	_	0	_	_	_
-10	pihta	_	_	_	_	0	_	_	_
-11	millise	_	_	_	_	0	_	_	_
-12	seose	_	_	_	_	0	_	_	_
-13	eelneva	_	_	_	_	0	_	_	_
-14	lugemine	_	_	_	_	0	_	_	_
-15	andma	_	_	_	_	0	_	_	_
-16	pidi	pidama	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	comp:pred	_	_
-
-</code></pre>
-
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token, </li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Ei	_	_	_	_	0	_	_	_
 2	hakka	_	_	_	_	0	_	_	_
 3	pikemalt	_	_	_	_	0	_	_	_
@@ -319,7 +578,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>overridden disfluency</i>(<a href="https://universaldependencies.org/u/dep/reparandum.html">reparandum)</a> of the head token, </li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>overridden disfluency</i>(<a href="https://universaldependencies.org/u/dep/reparandum.html">reparandum)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
 1	Paljudel	_	_	_	_	0	_	_	_
 2	juhtudel	_	_	_	_	0	_	_	_
 3	on	olema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
@@ -332,7 +591,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@cop)</a> of the head token, </li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>subject</i>(<a href="https://surfacesyntacticud.github.io/">subj@cop)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	Mures	_	_	_	_	0	_	_	_
 2	inimesel	_	_	_	_	0	_	_	_
 3	võibolla	_	_	_	_	0	_	_	_
@@ -354,7 +613,21 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>unk</i>(<a href="https://universaldependencies.org/">unk)</a> of the head token, </li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>complement for auxiliary</i>(<a href="https://surfacesyntacticud.github.io/">comp:aux)</a> of the head token,  and the head token is <i>AUX</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Erisoov	_	_	_	_	0	_	_	_
+2	oleks	olema	AUX	V	Mood=Cnd|Tense=Pres|VerbForm=Fin|Voice=Act	4	comp:aux	_	_
+3	et	_	_	_	_	0	_	_	_
+4	saaks	saama	AUX	V	Mood=Cnd|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+5	tuulde	_	_	_	_	0	_	_	_
+6	lennata	_	_	_	_	0	_	_	_
+7	koos	_	_	_	_	0	_	_	_
+8	kallis	_	_	_	_	0	_	_	_
+9	abikaasaga	_	_	_	_	0	_	_	_
+10	...	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>unk</i>(<a href="https://universaldependencies.org/">unk)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>VERB</i>.</li><pre><code class="language-conllu">
 1	või	_	_	_	_	0	_	_	_
 2	see	_	_	_	_	0	_	_	_
 3	kehtib	kehtima	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
@@ -385,7 +658,7 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@relcl)</a> of the head token, </li><pre><code class="language-conllu">
+<br><li> When the dependent token is the <i>modifer</i>(<a href="https://surfacesyntacticud.github.io/">mod@relcl)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
 1	see	_	_	_	_	0	_	_	_
 2	aasta	_	_	_	_	0	_	_	_
 3	aga	_	_	_	_	0	_	_	_
@@ -422,6 +695,26 @@ span.displaynone { display: none; }
 34	äärmusest	_	_	_	_	0	_	_	_
 35	teise	_	_	_	_	0	_	_	_
 36	?!	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<br><li> When the dependent token is the <i>predicative complements</i>(<a href="https://surfacesyntacticud.github.io/">comp:pred)</a> of the head token,  and the head token is <i>VERB</i>  and the dependent token is <i>AUX</i>.</li><pre><code class="language-conllu">
+1	Võibolla	_	_	_	_	0	_	_	_
+2	liiga	_	_	_	_	0	_	_	_
+3	hommik	_	_	_	_	0	_	_	_
+4	ja	_	_	_	_	0	_	_	_
+5	ma	_	_	_	_	0	_	_	_
+6	ei	_	_	_	_	0	_	_	_
+7	saa	saama	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	0	_	_	_
+8	päris	_	_	_	_	0	_	_	_
+9	täpselt	_	_	_	_	0	_	_	_
+10	pihta	_	_	_	_	0	_	_	_
+11	millise	_	_	_	_	0	_	_	_
+12	seose	_	_	_	_	0	_	_	_
+13	eelneva	_	_	_	_	0	_	_	_
+14	lugemine	_	_	_	_	0	_	_	_
+15	andma	_	_	_	_	0	_	_	_
+16	pidi	pidama	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	comp:pred	_	_
 
 </code></pre>
 

@@ -141,16 +141,22 @@ span.displaynone { display: none; }
 </li><li class="nav"><a href="introduction.html">Usage</a></li>
 <li class="nav"><a href="about.html">About Us</a></li>
 <li class="nav"><a href="download.html">Download Rules</a></li></ul>
-<br> <a href="index.html">Back to language list</a><br><h2> Contact </h2>
-<li><p> This software was built by <a href="https://www.cs.cmu.edu/~aschaudh">Aditi Chaudhary<a> and <a href="http://www.cs.cmu.edu/~aanastas/">Antonios Anasatasopoulos.</a> </p></li><li>If you have any questions, please contact <i>aschaudh [at] andrew [dot] cmu [dot] edu</i></li><h2> Code </h2>
-<li>The code to create this interface can be found <a href="https://github.com/Aditi138/LASE-Agreement">here.</a></li>
-<h2> Citing </h2>
-<li>If you make use of this software for research purposes, we will appreciate citing the following: </li> <br>
-        <li> Aditi Chaudhary, Antonios Anastasopoulos, Adithya Pratapa, David R. Mortensen, Zaid Sheikh, Yulia Tsvetkov, Graham Neubig. 2020. <a href=" https://arxiv.org/pdf/2010.01160.pdf">Automatic Extraction of Rules Governing Morphological Agreement. </a> <br> In <i>Proceedings of the Conference on Empirical Methods in Natural Language Processing. November 2020.</i>  </li>
-        <li> <br> <code> @inproceedings{chaudhary20emnlp,<br>title = {Automatic Extraction of Rules Governing Morphological Agreement},<br> author = {Aditi Chaudhary and Antonios Anastasopoulos and Adithya Pratapa and David R. Mortensen and Zaid Sheikh and Yulia Tsvetkov and Graham Neubig},<br>booktitle = {Conference on Empirical Methods in Natural Language Processing (EMNLP)},<br>address = {Online},<br>month = {November},<br>year = {2020}} </code></li>
+<br> <a href="index.html">Back to language list</a><br><h2> Agreement Rules </h2>
+        <li>Click <a href="./all_rules.zip"> here </a> to download all agreement rules for the processed languages </li>
+        <li> Each language (treebank) has a text file which contains the rules per each feature in the tab separated format: </li>
+
+          <h3> Example rules for Spanish-GSD </h3>
+        <li> Gender  &nbsp;&nbsp;&nbsp;&nbsp; relation,head-pos,child-pos</li>
+        <li>det,NOUN,DET &nbsp;&nbsp; mod,NOUN,ADJ &nbsp;&nbsp;   mod,NOUN,VERB &nbsp;&nbsp;  det,PROPN,DET &nbsp;&nbsp;  conj,ADJ,ADJ   &nbsp;&nbsp; appos,NOUN,PROPN    &nbsp;&nbsp;    conj,VERB,VERB  &nbsp;&nbsp;det,NOUN,PRON  &nbsp;&nbsp; mod,PROPN,PROPN&nbsp;&nbsp; det,PRON,DET   </li>
+        <br>
+        <li> Number   &nbsp;&nbsp;&nbsp;&nbsp; relation,head-pos,child-pos </li>
+        <li>det,NOUN,DET   &nbsp;&nbsp;   mod,NOUN,ADJ   &nbsp;&nbsp;   subj,VERB,NOUN  &nbsp;&nbsp;  subj,AUX,NOUN   &nbsp;&nbsp;  comp:pred,AUX,ADJ     &nbsp;&nbsp;    det,PROPN,DET  &nbsp;&nbsp;   subj,VERB,PRON  &nbsp;&nbsp;  conj,ADJ,ADJ   &nbsp;&nbsp;   comp:pred,VERB,ADJ  &nbsp;&nbsp;     det,PRON,DET</li>
 
 
-<!-- support for embedded visualizations -->
+
+
+
+        <!-- support for embedded visualizations -->
 <script type="text/javascript">
     var root = 'https://universaldependencies.org/'; // filled in by jekyll
     head.js(

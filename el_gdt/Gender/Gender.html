@@ -138,6 +138,128 @@ span.displaynone { display: none; }
 	  </div>
 	</noscript>
 <ul class="nav"><li class="nav"><a class="active" href="../../index.html">Home</a></li><li class="nav"><a href="../../introduction.html">Usage</a></li><li class="nav"><a href="../../about.html">About Us</a></li></ul><br><li><a href="../index.html">Back to Greek-GDT page</a></li>
-<h1> Token Distribution across Gender </h1><p>The following histogram captures the token distribution per different part-of-speech (POS) tags.</p><p>Legend on the top-right shows the different values the Gender attribute takes.<br>'NA' denotes those tokens which do not possess the Gender attribute.</p><img src="pos.png" alt="Gender"><h2>Token examples for each POS:</h2><li.h><a href="NOUN.html">&nbsp;NOUN</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="DET.html">&nbsp;DET</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="PUNCT.html">&nbsp;PUNCT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="VERB.html">&nbsp;VERB</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="ADP.html">&nbsp;ADP</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="ADJ.html">&nbsp;ADJ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="AUX.html">&nbsp;AUX</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="PRON.html">&nbsp;PRON</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="ADV.html">&nbsp;ADV</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="CCONJ.html">&nbsp;CCONJ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="PROPN.html">&nbsp;PROPN</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="SCONJ.html">&nbsp;SCONJ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="X.html">&nbsp;X</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="NUM.html">&nbsp;NUM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="PART.html">&nbsp;PART</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="SYM.html">&nbsp;SYM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><h2>Gender agreement rules:</h2>
-<p> The following decision tree visualizes the rules used for classifying presence/absence of morphological agreement between two tokens that are connected by a dependency relation denoted by <i>relation</i>. <i>head-pos</i> and <i>child-pos</i> refer to the POS tag of the head and child token respectively.</p> <p> Each node of the tree represents a portion of the data. <i>samples</i> denotes the number of training data points in that node. <i>value</i> is the class distribution within that node. Each edge denotes the feature used for splitting. <br>Leaf nodes contain the description of all of the features that appear in that leaf. <i>*</i> denotes that the feature can take any value.</p><h2> <a id="show_image9">Tree for p=0.01</a> </h2><div id="show_image9div" ><p> Click on <button id="show_summary9">Summary</button> to show summary of agreement rules. </p><div id="summary9"> <ol><li> <i>NOUN</i> tokens agree with their dependent tokens for the dependency relations: <i>determiner(det)</i> </li><br><li> <i>ADJ</i> tokens agree with their head for the dependency relations: <i>unk@fixed(unk@fixed)</i>, <i>subject(subj)</i>, <i>conjunct(conj)</i>, <i>modifer(mod)</i> </li><br><li> <i>PROPN</i> tokens agree with their head for the dependency relations: <i>appositional modifier(appos)</i>, <i>flat multiword expression(flat)</i> </li><br><li> <i>NUM</i> tokens agree when the dependent token belongs to [<i>NUM</i>] for the dependency relations: <i>compound(compound)</i> </li><br><li> <i>NOUN</i> tokens agree when the dependent token belongs to [<i>NUM</i>] for the dependency relations: <i>underspecified dependency(udep)</i> </li><br></ol> </div><img id="collate9img"  src="Gender_collate9.png" alt="Gender"> <h3> Examples for each leaf node: 
- </h3><li.h><a href="Gender-0-.html">&nbsp;Leaf-0</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="Gender-1-.html">&nbsp;Leaf-1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="Gender-2-.html">&nbsp;Leaf-2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="Gender-3-.html">&nbsp;Leaf-3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="Gender-4-.html">&nbsp;Leaf-4</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="Gender-5-.html">&nbsp;Leaf-5</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="Gender-6-.html">&nbsp;Leaf-6</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><li.h><a href="Gender-7-.html">&nbsp;Leaf-7</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li.h><p> Click on <button id="show_collate9">Expand</button> to expand the tree. </p><img id="my_images9" src="Gender9.png" style="display:none;">
+<h1> Token Distribution across Gender feature </h1><p>The following histogram captures the token distribution per different part-of-speech (POS) tags.</p><p>Legend on the top-right shows the different values the Case attribute takes.<br>'NA' denotes those tokens which do not possess the Gender attribute.</p><img src="pos.png" alt="Gender"><h1>Rules for required-agreement:</h1><h5> There is required-agreement between the syntactic head and its dependent when </h5> <table><col><colgroup span="3"></colgroup><tr><th colspan="3	scope="colgroup" " style="text-align:center">Rules</th><th rowspan="3" style="text-align:center">Examples</th></tr><tr><th colspan="1	scope="colgroup" " style="text-align:center;width:130px">dependent is a</th><th colspan="1	scope="colgroup" " style="text-align:center;width:130px">dependent PRON  with PronType</th><th colspan="1	scope="colgroup" " style="text-align:center;width:130px">the dependent is head of relation</th></tr><tr><th scope="col" style="text-align:center"> NOUN </th><th scope="col" style="text-align:center"> Prs </th><th scope="col" style="text-align:center"> det </th></tr><tr><td style="text-align:center"> N </td><td style="text-align:center"> N </td><td style="text-align:center"> N </td> <td> <a href="Leaf-0.html"> Examples</a> </td></tr><tr><td style="text-align:center"> N </td><td style="text-align:center"> N </td><td style="text-align:center"> Y </td> <td> <a href="Leaf-1.html"> Examples</a> </td></tr><tr><td style="text-align:center"> Y </td><td style="text-align:center"> - </td><td style="text-align:center"> - </td> <td> <a href="Leaf-6.html"> Examples</a> </td></tr></table></ul><br><br><br>
+
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = 'https://universaldependencies.org/'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // Annodoc
+        root + 'lib/annodoc/annodoc.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+
+        // Make subaccordions first, make them active to get height, and then close later
+        $(".jquery-ui-subaccordion-closed").accordion({collapsible: true, disabled:false, active:0});
+
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+        //now reclose these accordions
+        $(".jquery-ui-subaccordion-closed").accordion("option","active",false);
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'no';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+      <div id="footer">
+	  <p class="footer-text">
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a> with the help of and many thanks to <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>.</p>
+      </div>
+    </div>
+  </body>
+</html>

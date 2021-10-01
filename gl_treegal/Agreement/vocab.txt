@@ -1,0 +1,31 @@
+POS:All
+0	deppos_VERB
+1	headpos_VERB
+2	deprel_conj
+3	depfeat_Person_3
+4	depfeat_Tense_Pres
+5	depfeat_VerbForm_Fin
+6	headfeat_VERB_Person_3
+7	headfeat_Person_3
+8	headfeat_VERB_Tense_Pres
+9	headfeat_Tense_Pres
+10	headfeat_VERB_VerbForm_Fin
+11	headfeat_VerbForm_Fin
+12	depfeat_Number_Sing
+13	depheadrel_subj
+14	depheadpos_NOUN
+15	depheadpos_PUNCT
+16	depheadrel_udep
+17	depheadpos_ADV
+18	depheadrel_comp:obj
+19	deppos_AUX
+20	headpos_AUX
+21	headfeat_Number_Sing
+22	headfeat_AUX_Person_3
+23	headfeat_AUX_VerbForm_Fin
+24	depheadpos_PRON
+25	headfeat_VERB_Number_Sing
+26	depheadrel_mod
+27	depheadpos_ADP
+
+Data:All	Labels	1,277;0,20

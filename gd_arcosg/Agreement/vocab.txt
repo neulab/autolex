@@ -1,3 +1,0 @@
-POS:All
-
-Data:All	Labels	1,61;0,35
